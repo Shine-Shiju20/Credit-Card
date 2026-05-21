@@ -11,13 +11,13 @@ public class CleanupManager {
     public static void cleanup() {
         ScenarioContext ctx = ScenarioContext.get();
 
-        if (!ctx.isRuntime()) {
-            return;
-        }
-
         try {
             if (ctx.hasCard()) {
-                cleanupCard();
+                try {
+                    cleanupCard();
+                } catch (Exception e) {
+                    logger.warn("Skipping card cleanup: {}", e.getMessage());
+                }
             }
             if (ctx.hasAccount()) {
                 cleanupAccount();

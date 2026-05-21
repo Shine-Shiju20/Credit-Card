@@ -1,0 +1,25 @@
+{
+    "output": {
+        "style": "markdown"
+    },
+    "ignore": {
+        "custom_patterns": [
+            "**/node_modules/**",
+            "**/.git/**",
+            "**/scratch/**",
+            "**/temp/**",
+            "**/tmp/**",
+            "**/.agent/**",
+            "**/dist/**",
+            "**/build/**",
+            "**/.next/**",
+            "**/.cache/**",
+            "**/*.xlsx",
+            "**/*.docx",
+            "**/*.pdf",
+            "**/*.log",
+            "package-lock.json",
+            "repomix-output.md"
+        ]
+    }
+}

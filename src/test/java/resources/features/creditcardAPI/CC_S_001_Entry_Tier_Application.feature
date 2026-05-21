@@ -80,7 +80,6 @@ Feature: CC-S-001 Credit Card Application - Entry Tier
       | TestcaseID |
       | CC_TC_012 |
 
-  # CC_TC_013 — fix scenario title + expected code
   @CC-S-001
   @CC_TC_013
   Scenario Outline: Verify limit below minimum threshold rejection
@@ -91,7 +90,6 @@ Feature: CC-S-001 Credit Card Application - Entry Tier
       | TestcaseID |
       | CC_TC_013  |
 
-# CC_TC_014 — fix scenario title + expected code
   @CC-S-001
   @CC_TC_014
   Scenario Outline: Verify minimum threshold limit acceptance

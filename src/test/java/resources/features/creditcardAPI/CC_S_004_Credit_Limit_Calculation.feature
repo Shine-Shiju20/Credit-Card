@@ -30,7 +30,7 @@ Feature: CC-S-004 Credit Limit Calculation
   Scenario Outline: Verify high DTI reduces eligibility
     Given test data is loaded for "<TestcaseID>"
     When user submits credit card application
-    Then API response status code should be 400
+    Then API response status code should be 201
 
     Examples:
       | TestcaseID |

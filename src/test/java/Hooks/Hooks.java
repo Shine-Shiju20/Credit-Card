@@ -14,12 +14,20 @@ public class Hooks {
 
     public static DriverFactory factory;
 
-    @Before("@CreditCardAPI")
-    public void setupAPI() {
-        logger.info("Setting up API Runtime Environment");
-        TokenManager.login();
-        RuntimeEntityFactory.createRuntimeEnvironment();
-    }
+//    @Before("@CreditCardAPI")
+//    public void setupAPI() {
+//        logger.info("Setting up API Runtime Environment");
+//        // Always reset to main account token before creating runtime entities
+//        utils.TokenManager.invalidate();
+//        TokenManager.login(); // logs in as main account
+//        RuntimeEntityFactory.createRuntimeEnvironment();
+//    }
+@Before("@CreditCardAPI")
+public void setupAPI() {
+    logger.info("Setting up API base authentication context");
+    utils.TokenManager.invalidate();
+    TokenManager.login(); // login only, do not create runtime entities here
+}
 
     @After("@CreditCardAPI")
     public void tearDownAPI() {
@@ -41,4 +49,5 @@ public class Hooks {
         }
         logger.info("Browser Closed");
     }
+
 }

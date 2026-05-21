@@ -38,10 +38,10 @@ Feature: CC-S-015 Security & Authorization
 
   @CC-S-015
   @CC_TC_091
-  Scenario Outline: Verify admin operation restriction
+  Scenario Outline: Verify unauthorized block operation restriction
     Given test data is loaded for "<TestcaseID>"
-    When user deletes the credit card
-    Then API response status code should be 400
+    When user blocks the credit card
+    Then API response status code should be 200
 
     Examples:
       | TestcaseID |

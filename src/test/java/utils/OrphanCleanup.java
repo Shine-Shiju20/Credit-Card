@@ -10,6 +10,7 @@ public class OrphanCleanup {
     public static void main(String[] args) throws Exception {
         ConfigReader config = new ConfigReader();
         RestAssured.baseURI = config.getProp("APIUrl");
+        String pin = config.getProp("transactionPin");
 
         Response loginResp = given()
                 .contentType("application/json")
@@ -32,31 +33,35 @@ public class OrphanCleanup {
         }
         System.out.println("Savings accounts: " + savings);
 
-        // Need to free up at least 4 savings slots. Delete newest savings first.
         int deleted = 0;
-        int target = savings - 1; // keep only 1 savings account
+        int target = savings - 1;
         for (int i = 0; i < accounts.size() && deleted < target; i++) {
             Map<String, Object> acc = accounts.get(i);
             if (!"savings".equals(acc.get("account_type"))) continue;
 
             String id = (String) acc.get("account_id");
+            String accountNumber = (String) acc.get("account_number");
             String balance = String.valueOf(acc.get("balance"));
             double bal = Double.parseDouble(balance);
 
-            // Withdraw balance first if needed
             if (bal > 0) {
                 Response withdraw = given()
                         .contentType("application/json")
                         .cookie("access_token", token)
-                        .body("{\"account_id\":\"" + id + "\",\"amount\":" + bal + "}")
+                        .body("{\"account_number\":\"" + accountNumber
+                                + "\",\"amount\":" + bal
+                                + ",\"transaction_pin\":\"" + pin + "\"}")
                         .post("/transactions/withdraw");
-                System.out.println("WITHDRAW " + id + " amount=" + bal + " -> " + withdraw.statusCode());
+                System.out.println("WITHDRAW " + id + " amount=" + bal
+                        + " -> " + withdraw.statusCode()
+                        + " | " + withdraw.getBody().asString());
             }
 
             Response del = given()
                     .cookie("access_token", token)
                     .delete("/accounts/" + id);
-            System.out.println("DELETE " + id + " -> " + del.statusCode() + " | " + del.getBody().asString());
+            System.out.println("DELETE " + id + " -> " + del.statusCode()
+                    + " | " + del.getBody().asString());
             if (del.statusCode() == 200 || del.statusCode() == 204) deleted++;
         }
 

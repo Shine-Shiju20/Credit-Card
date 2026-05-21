@@ -27,9 +27,9 @@ Feature: CC-S-014 Payment Tracking Integration
 
   @CC-S-014
   @CC_TC_075
-  Scenario Outline: Verify duplicate callback ignored
+  Scenario Outline: Verify payment analytics API
     Given test data is loaded for "<TestcaseID>"
-    When payment callback is triggered
+    When user fetches payment analytics
     Then API response status code should be 200
 
     Examples:
