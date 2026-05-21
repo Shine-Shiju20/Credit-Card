@@ -64,11 +64,10 @@ public class CreditCard_API_Steps {
             resolveSeedAccountId();
         } else {
             if (!ScenarioContext.get().hasAccount()) {
-                logger.info("RUNTIME mode detected. Creating runtime environment after Excel data load.");
-                RuntimeEntityFactory.createRuntimeEnvironment();
+                logger.info("RUNTIME mode detected. Creating runtime environment using Excel data.");
+                RuntimeEntityFactory.createRuntimeEnvironment(parseDouble(getValue("Source_Account_Balance"))
+                );
             }
-
-            alignRuntimeAccountBalance();
         }
     }
 
@@ -274,11 +273,24 @@ public class CreditCard_API_Steps {
         return Double.parseDouble(value.trim());
     }
 
+    private String getValue(String... keys) {
+        for (String key : keys) {
+            String value = testData.get(key);
+
+            if (value != null
+                    && !value.trim().isEmpty()
+                    && !value.equalsIgnoreCase("NaN")) {
+                return value.trim();
+            }
+        }
+        return null;
+    }
+
     private Map<String, Object> buildPurchasePayload() {
         Map<String, Object> payload = new HashMap<>();
 
         payload.put("card_id", getCardId());
-        payload.put("amount", parseDouble(testData.get("Amount")));
+        payload.put("amount", parseDouble(getValue("Purchase_Amount", "Amount", "amount")));
         payload.put("merchant", testData.get("Merchant"));
         payload.put("category", testData.get("Category"));
 
@@ -288,10 +300,18 @@ public class CreditCard_API_Steps {
     private Map<String, Object> buildRepaymentPayload() {
         Map<String, Object> payload = new HashMap<>();
 
+        String repaymentAmount = getValue(
+                "Repayment_Amount",
+                "repayment_amount",
+                "Amount",
+                "amount"
+        );
+
+        System.out.println("DEBUG Repayment Amount = " + repaymentAmount);
+
         payload.put("card_id", getCardId());
-        payload.put("amount", parseDouble(testData.get("Amount")));
-        payload.put("minimumDue", parseDouble(testData.get("Minimum_Due")));
-        payload.put("outstandingBalance", parseDouble(testData.get("Outstanding_Balance")));
+        payload.put("amount", parseDouble(repaymentAmount));
+        System.out.println("Repayment Payload = " + payload);
 
         return payload;
     }
@@ -371,7 +391,52 @@ public class CreditCard_API_Steps {
 
     @When("user performs repayment transaction")
     public void user_performs_repayment_transaction() {
-        response = creditAPI.repayCreditCardBalance(getAuthToken(), buildRepaymentPayload());
+
+        String setupPurchaseAmount = getValue(
+                "Purchase_Amount",
+                "Outstanding_Balance"
+        );
+        String merchant = getValue("Merchant", "merchant");
+        String category = getValue( "Category", "category");
+
+        if (merchant == null) {
+            merchant = "Test Merchant";
+        }
+
+        if (category == null) {
+            category = "Shopping";
+        }
+
+        if (setupPurchaseAmount != null) {
+            Map<String, Object> purchasePayload = new HashMap<>();
+            purchasePayload.put("card_id", getCardId());
+            purchasePayload.put("amount", parseDouble(setupPurchaseAmount));
+            purchasePayload.put("merchant", merchant);
+            purchasePayload.put("category", category);
+
+            Response setupPurchaseResponse =
+                    creditAPI.purchaseTransaction(getAuthToken(), purchasePayload);
+
+            System.out.println("Repayment setup purchase response: "
+                    + setupPurchaseResponse.getBody().asString());
+
+            if (setupPurchaseResponse.getStatusCode() != 200) {
+                throw new RuntimeException(
+                        "Setup purchase failed before repayment | status="
+                                + setupPurchaseResponse.getStatusCode()
+                                + " | body="
+                                + setupPurchaseResponse.getBody().asString()
+                );
+            }
+        }
+
+        response = creditAPI.repayCreditCardBalance(
+                getAuthToken(),
+                buildRepaymentPayload()
+        );
+
+        System.out.println("Repayment Response: "
+                + response.getBody().asString());
     }
 
     @When("user blocks the credit card")

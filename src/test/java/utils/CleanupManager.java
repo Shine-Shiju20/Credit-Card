@@ -30,9 +30,23 @@ public class CleanupManager {
     }
 
     private static void cleanupCard() {
-        try { RuntimeCardManager.repayFull();  } catch (Exception e) { logger.error("Repay failed: "  + e.getMessage()); }
-        try { RuntimeCardManager.closeCard();  } catch (Exception e) { logger.error("Close failed: "  + e.getMessage()); }
-        try { RuntimeCardManager.deleteCard(); } catch (Exception e) { logger.error("Delete card failed: " + e.getMessage()); }
+        try {
+            RuntimeCardManager.repayFull();
+        } catch (Exception e) {
+            logger.warn("Repay skipped/failed during cleanup: {}", e.getMessage());
+        }
+
+        try {
+            RuntimeCardManager.closeCard();
+        } catch (Exception e) {
+            logger.warn("Close skipped during cleanup: {}", e.getMessage());
+        }
+
+        try {
+            RuntimeCardManager.deleteCard();
+        } catch (Exception e) {
+            logger.warn("Delete card skipped during cleanup: {}", e.getMessage());
+        }
     }
 
     private static void cleanupAccount() {

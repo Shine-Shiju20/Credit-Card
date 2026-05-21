@@ -63,10 +63,20 @@ public class Credit_API {
                 .post("/credit-cards/purchase");
     }
 
-    public Response repayCreditCardBalance(String authToken, Map<String, Object> payload) {
-        return addRequestBody(addAuthHeader(authToken), payload)
-                .post("/credit-cards/payment");
-    }
+//    public Response repayCreditCardBalance(String authToken, Map<String, Object> payload) {
+//        return addRequestBody(addAuthHeader(authToken), payload)
+//                .post("/credit-cards/payment");
+//    }
+public Response repayCreditCardBalance(String authToken, Map<String, Object> payload) {
+
+    System.out.println("RAW REPAYMENT PAYLOAD = " + payload);
+
+    return addAuthHeader(authToken)
+            .contentType("application/json")
+            .body(payload)
+            .log().all()
+            .post("/credit-cards/payment");
+}
 
     public Response repayCreditCard(String authToken, Map<String, Object> payload) {
         return addRequestBody(addAuthHeader(authToken), payload)

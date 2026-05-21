@@ -71,7 +71,18 @@ public class RuntimeCardManager {
 
     public static void repayFull() {
         ScenarioContext ctx = ScenarioContext.get();
-        double outstanding = ctx.getRuntimeOutstandingBalance();
+
+        Response cardResponse = given()
+                .cookie("access_token", ctx.getAccessToken())
+                .get(CARDS_BASE + "/" + ctx.getRuntimeCardId());
+
+        if (cardResponse.statusCode() != 200) {
+            logger.info("Skipping repayment. Card not found or unauthorized.");
+            return;
+        }
+
+        double outstanding =
+                cardResponse.jsonPath().getDouble("data.outstandingBalance");
 
         if (outstanding <= 0) {
             logger.info("No outstanding balance to repay.");
@@ -90,12 +101,18 @@ public class RuntimeCardManager {
                 .post(CARDS_BASE + "/payment");
 
         if (response.statusCode() != 200) {
-            throw new RuntimeException("Repayment failed | status=" + response.statusCode()
-                    + " | body=" + response.getBody().asString());
+            throw new RuntimeException(
+                    "Repayment failed | status="
+                            + response.statusCode()
+                            + " | body="
+                            + response.getBody().asString()
+            );
         }
 
         ctx.setRuntimeOutstandingBalance(0);
-        logger.info("Full repayment done for card: " + ctx.getRuntimeCardId());
+
+        logger.info("Full repayment done for card: "
+                + ctx.getRuntimeCardId());
     }
 
     public static void closeCard() {
