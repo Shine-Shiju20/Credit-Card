@@ -91,6 +91,7 @@ public class RuntimeCardManager {
 
         String body = "{"
                 + "\"card_id\":\"" + ctx.getRuntimeCardId() + "\","
+                + "\"payment_amount\":" + outstanding + ","
                 + "\"amount\":" + outstanding
                 + "}";
 

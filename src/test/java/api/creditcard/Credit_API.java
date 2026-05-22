@@ -137,6 +137,11 @@ public Response repayCreditCardBalance(String authToken, Map<String, Object> pay
                 .get("/user/me");
     }
 
+    public Response updateUserProfile(String authToken, Map<String, Object> payload) {
+        return addRequestBody(addAuthHeader(authToken), payload)
+                .put("/user/me");
+    }
+
     public Response paymentCallback(Map<String, Object> payload) {
         return addRequestBody(requestSpecification, payload)
                 .post("/payment/callback");

@@ -1,0 +1,1172 @@
+﻿[
+    {
+        "Row":  2,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_001",
+        "Description":  "Verify user can open new credit card application form",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  3,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_002",
+        "Description":  "Verify linked bank accounts are displayed in dropdown",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  4,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_003",
+        "Description":  "Verify only ACTIVE accounts are shown in linked account dropdown",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  5,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_004",
+        "Description":  "Verify application fails when no linked account is selected",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  6,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_005",
+        "Description":  "Verify card type dropdown displays available card types",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  7,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_006",
+        "Description":  "Verify Entry card can be selected successfully",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  8,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_007",
+        "Description":  "Verify Premium card can be selected successfully",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  9,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_008",
+        "Description":  "Verify requested credit limit field accepts valid numeric value",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  10,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_009",
+        "Description":  "Verify requested credit limit field rejects alphabets",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  11,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_010",
+        "Description":  "Verify requested credit limit field rejects special characters",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  12,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_011",
+        "Description":  "Verify requested credit limit field rejects negative values",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  13,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_012",
+        "Description":  "Verify requested credit limit field rejects zero value",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  14,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_013",
+        "Description":  "Verify requested limit below 10000 is rejected",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  15,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_014",
+        "Description":  "Verify requested limit exactly 10,000 is accepted",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  16,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_015",
+        "Description":  "Verify extremely high requested limit is validated properly",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  17,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_016",
+        "Description":  "Verify empty requested limit field validation",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  18,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_017",
+        "Description":  "Verify decimal limit values are handled correctly",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  19,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_018",
+        "Description":  "Verify Continue button works after valid inputs",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  20,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_019",
+        "Description":  "Verify Continue button is disabled for invalid inputs",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  21,
+        "Scenario_ID":  "CC_S_001",
+        "Requirement_ID":  "CC_REQ_001",
+        "Testcase_ID":  "CC_TC_020",
+        "Description":  "Verify Cancel button closes application modal",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  22,
+        "Scenario_ID":  "CC_S_002",
+        "Requirement_ID":  "CC_REQ_002",
+        "Testcase_ID":  "CC_TC_021",
+        "Description":  "Verify KYC verified user can apply",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  23,
+        "Scenario_ID":  "CC_S_002",
+        "Requirement_ID":  "CC_REQ_002",
+        "Testcase_ID":  "CC_TC_022",
+        "Description":  "Verify non-verified KYC user cannot apply",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  24,
+        "Scenario_ID":  "CC_S_002",
+        "Requirement_ID":  "CC_REQ_002",
+        "Testcase_ID":  "CC_TC_023",
+        "Description":  "Verify eligible age user can apply through KYC DOB",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  25,
+        "Scenario_ID":  "CC_S_002",
+        "Requirement_ID":  "CC_REQ_002",
+        "Testcase_ID":  "CC_TC_024",
+        "Description":  "Verify underage user cannot apply",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  26,
+        "Scenario_ID":  "CC_S_002",
+        "Requirement_ID":  "CC_REQ_002",
+        "Testcase_ID":  "CC_TC_025",
+        "Description":  "Verify overage user cannot apply",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  27,
+        "Scenario_ID":  "CC_S_003",
+        "Requirement_ID":  "CC_REQ_003",
+        "Testcase_ID":  "CC_TC_026",
+        "Description":  "Verify Entry card approval with income 3L",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  28,
+        "Scenario_ID":  "CC_S_003",
+        "Requirement_ID":  "CC_REQ_003",
+        "Testcase_ID":  "CC_TC_027",
+        "Description":  "Verify Entry card rejection with income below 3L",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  29,
+        "Scenario_ID":  "CC_S_003",
+        "Requirement_ID":  "CC_REQ_003",
+        "Testcase_ID":  "CC_TC_028",
+        "Description":  "Verify Premium card approval with income 10L",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  30,
+        "Scenario_ID":  "CC_S_003",
+        "Requirement_ID":  "CC_REQ_003",
+        "Testcase_ID":  "CC_TC_029",
+        "Description":  "Verify Premium card rejection with income below 10L",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  31,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_004",
+        "Testcase_ID":  "CC_TC_030",
+        "Description":  "Verify application approval when score 500",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  32,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_004",
+        "Testcase_ID":  "CC_TC_031",
+        "Description":  "Verify low credit score and high DTI causes rejection",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  33,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_004",
+        "Testcase_ID":  "CC_TC_032",
+        "Description":  "Verify high score user receives higher credit limit",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  34,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_004",
+        "Testcase_ID":  "CC_TC_033",
+        "Description":  "Verify DTI affects eligibility correctly",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  35,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_004",
+        "Testcase_ID":  "CC_TC_034",
+        "Description":  "Verify low DTI improves approval chances",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  36,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_005",
+        "Testcase_ID":  "CC_TC_035",
+        "Description":  "Verify approved limit is based on income logic",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  37,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_005",
+        "Testcase_ID":  "CC_TC_036",
+        "Description":  "Verify current balance alone does not determine limit",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  38,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_005",
+        "Testcase_ID":  "CC_TC_037",
+        "Description":  "Verify average balance adds bonus limit",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  39,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_005",
+        "Testcase_ID":  "CC_TC_038",
+        "Description":  "Verify minimum final approved limit is ?5,000",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  40,
+        "Scenario_ID":  "CC_S_004",
+        "Requirement_ID":  "CC_REQ_005",
+        "Testcase_ID":  "CC_TC_039",
+        "Description":  "Verify application rejection when final limit below ?5,000",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  41,
+        "Scenario_ID":  "CC_S_005",
+        "Requirement_ID":  "CC_REQ_006",
+        "Testcase_ID":  "CC_TC_040",
+        "Description":  "Verify purchase transaction succeeds within available limit",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  42,
+        "Scenario_ID":  "CC_S_005",
+        "Requirement_ID":  "CC_REQ_006",
+        "Testcase_ID":  "CC_TC_041",
+        "Description":  "Verify purchase transaction fails beyond available limit",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  43,
+        "Scenario_ID":  "CC_S_005",
+        "Requirement_ID":  "CC_REQ_006",
+        "Testcase_ID":  "CC_TC_042",
+        "Description":  "Verify available limit reduces after successful purchase",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  44,
+        "Scenario_ID":  "CC_S_005",
+        "Requirement_ID":  "CC_REQ_006",
+        "Testcase_ID":  "CC_TC_043",
+        "Description":  "Verify blocked card cannot perform transactions",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  45,
+        "Scenario_ID":  "CC_S_005",
+        "Requirement_ID":  "CC_REQ_006",
+        "Testcase_ID":  "CC_TC_044",
+        "Description":  "Verify expired card cannot perform transactions",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  46,
+        "Scenario_ID":  "CC_S_006",
+        "Requirement_ID":  "CC_REQ_007",
+        "Testcase_ID":  "CC_TC_045",
+        "Description":  "Verify full repayment clears outstanding balance",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  47,
+        "Scenario_ID":  "CC_S_006",
+        "Requirement_ID":  "CC_REQ_007",
+        "Testcase_ID":  "CC_TC_046",
+        "Description":  "Verify partial repayment updates outstanding correctly",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  48,
+        "Scenario_ID":  "CC_S_006",
+        "Requirement_ID":  "CC_REQ_007",
+        "Testcase_ID":  "CC_TC_047",
+        "Description":  "Verify repayment fails for insufficient account balance",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  49,
+        "Scenario_ID":  "CC_S_007",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_048",
+        "Description":  "Verify active card can be blocked successfully",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  50,
+        "Scenario_ID":  "CC_S_007",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_049",
+        "Description":  "Verify blocked card can be unblocked successfully",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  51,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_009",
+        "Testcase_ID":  "CC_TC_050",
+        "Description":  "Verify unauthorized user cannot access another user’s credit card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  52,
+        "Scenario_ID":  "CC_S_009",
+        "Requirement_ID":  "CC_REQ_009",
+        "Testcase_ID":  "CC_TC_051",
+        "Description":  "Verify closed zero-balance card can be permanently deleted",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  53,
+        "Scenario_ID":  "CC_S_009",
+        "Requirement_ID":  "CC_REQ_009",
+        "Testcase_ID":  "CC_TC_052",
+        "Description":  "Verify active card cannot be deleted",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  54,
+        "Scenario_ID":  "CC_S_009",
+        "Requirement_ID":  "CC_REQ_009",
+        "Testcase_ID":  "CC_TC_053",
+        "Description":  "Verify Delete Card button appears only for closed card in UI",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  55,
+        "Scenario_ID":  "CC_S_009",
+        "Requirement_ID":  "CC_REQ_009",
+        "Testcase_ID":  "CC_TC_054",
+        "Description":  "Verify unauthenticated UI user cannot access delete flow",
+        "Auth_State":  "logged_out",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  56,
+        "Scenario_ID":  "CC_S_010",
+        "Requirement_ID":  "CC_REQ_010",
+        "Testcase_ID":  "CC_TC_055",
+        "Description":  "Verify statement API returns summary and transactions for valid card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "18000"
+    },
+    {
+        "Row":  57,
+        "Scenario_ID":  "CC_S_010",
+        "Requirement_ID":  "CC_REQ_010",
+        "Testcase_ID":  "CC_TC_056",
+        "Description":  "Verify statement API rejects card not owned by logged-in user",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  58,
+        "Scenario_ID":  "CC_S_010",
+        "Requirement_ID":  "CC_REQ_010",
+        "Testcase_ID":  "CC_TC_057",
+        "Description":  "Verify statement API handles card with no matching transactions",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  59,
+        "Scenario_ID":  "CC_S_010",
+        "Requirement_ID":  "CC_REQ_010",
+        "Testcase_ID":  "CC_TC_058",
+        "Description":  "Verify UI opens CreditCardStatementModal for a valid card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "18000"
+    },
+    {
+        "Row":  60,
+        "Scenario_ID":  "CC_S_010",
+        "Requirement_ID":  "CC_REQ_010",
+        "Testcase_ID":  "CC_TC_059",
+        "Description":  "Verify UI transaction type filter shows PURCHASE records",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "18000"
+    },
+    {
+        "Row":  61,
+        "Scenario_ID":  "CC_S_010",
+        "Requirement_ID":  "CC_REQ_010",
+        "Testcase_ID":  "CC_TC_060",
+        "Description":  "Verify unauthenticated user cannot open statement UI",
+        "Auth_State":  "logged_out",
+        "Expected_Result":  "18000"
+    },
+    {
+        "Row":  62,
+        "Scenario_ID":  "CC_S_011",
+        "Requirement_ID":  "CC_REQ_011",
+        "Testcase_ID":  "CC_TC_061",
+        "Description":  "Verify monthly billing applies 3.6% interest and 5% minimum due",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  63,
+        "Scenario_ID":  "CC_S_011",
+        "Requirement_ID":  "CC_REQ_011",
+        "Testcase_ID":  "CC_TC_062",
+        "Description":  "Verify zero outstanding card is skipped by billing job",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  64,
+        "Scenario_ID":  "CC_S_011",
+        "Requirement_ID":  "CC_REQ_011",
+        "Testcase_ID":  "CC_TC_063",
+        "Description":  "Verify blocked card with balance still accrues interest",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "10000"
+    },
+    {
+        "Row":  65,
+        "Scenario_ID":  "CC_S_011",
+        "Requirement_ID":  "CC_REQ_011",
+        "Testcase_ID":  "CC_TC_064",
+        "Description":  "Verify unauthorized user cannot trigger monthly billing from API",
+        "Auth_State":  "logged_out",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  66,
+        "Scenario_ID":  "CC_S_012",
+        "Requirement_ID":  "CC_REQ_012",
+        "Testcase_ID":  "CC_TC_065",
+        "Description":  "Verify overdue card receives 2% penalty during billing",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  67,
+        "Scenario_ID":  "CC_S_012",
+        "Requirement_ID":  "CC_REQ_012",
+        "Testcase_ID":  "CC_TC_066",
+        "Description":  "Verify penalty is not applied twice when penalty_applied is already true",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  68,
+        "Scenario_ID":  "CC_S_012",
+        "Requirement_ID":  "CC_REQ_012",
+        "Testcase_ID":  "CC_TC_067",
+        "Description":  "Verify full repayment clears penalty_applied flag",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "21120"
+    },
+    {
+        "Row":  69,
+        "Scenario_ID":  "CC_S_012",
+        "Requirement_ID":  "CC_REQ_012",
+        "Testcase_ID":  "CC_TC_068",
+        "Description":  "Verify unauthorized user cannot inspect another card penalty state via statement",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  70,
+        "Scenario_ID":  "CC_S_013",
+        "Requirement_ID":  "CC_REQ_013",
+        "Testcase_ID":  "CC_TC_069",
+        "Description":  "Verify API returns all cards for logged-in user",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  71,
+        "Scenario_ID":  "CC_S_013",
+        "Requirement_ID":  "CC_REQ_013",
+        "Testcase_ID":  "CC_TC_070",
+        "Description":  "Verify unauthenticated API user cannot list cards",
+        "Auth_State":  "logged_out",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  72,
+        "Scenario_ID":  "CC_S_013",
+        "Requirement_ID":  "CC_REQ_013",
+        "Testcase_ID":  "CC_TC_071",
+        "Description":  "Verify UI displays multiple cards and sorts active, blocked, closed",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  73,
+        "Scenario_ID":  "CC_S_013",
+        "Requirement_ID":  "CC_REQ_013",
+        "Testcase_ID":  "CC_TC_072",
+        "Description":  "Verify UI card flip shows management actions per status",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  74,
+        "Scenario_ID":  "CC_S_014",
+        "Requirement_ID":  "CC_REQ_014",
+        "Testcase_ID":  "CC_TC_073",
+        "Description":  "Verify credit card purchase creates payment tracking record",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  75,
+        "Scenario_ID":  "CC_S_014",
+        "Requirement_ID":  "CC_REQ_014",
+        "Testcase_ID":  "CC_TC_074",
+        "Description":  "Verify credit card payment creates payment tracking record",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  76,
+        "Scenario_ID":  "CC_S_014",
+        "Requirement_ID":  "CC_REQ_014",
+        "Testcase_ID":  "CC_TC_075",
+        "Description":  "Verify payment analytics summary includes credit card records",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "25000"
+    },
+    {
+        "Row":  77,
+        "Scenario_ID":  "CC_S_014",
+        "Requirement_ID":  "CC_REQ_014",
+        "Testcase_ID":  "CC_TC_076",
+        "Description":  "Verify UI PaymentTrackingPage lists credit card purchase records",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "1200"
+    },
+    {
+        "Row":  78,
+        "Scenario_ID":  "CC_S_014",
+        "Requirement_ID":  "CC_REQ_014",
+        "Testcase_ID":  "CC_TC_077",
+        "Description":  "Verify UI analytics cards show payment tracking totals",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "25000"
+    },
+    {
+        "Row":  79,
+        "Scenario_ID":  "CC_S_014",
+        "Requirement_ID":  "CC_REQ_014",
+        "Testcase_ID":  "CC_TC_078",
+        "Description":  "Verify unauthenticated user cannot access payment tracking UI",
+        "Auth_State":  "logged_out",
+        "Expected_Result":  "1200"
+    },
+    {
+        "Row":  80,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_079",
+        "Description":  "Verify active zero-balance card can be closed",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  81,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_080",
+        "Description":  "Verify card close fails when outstanding balance exists",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  82,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_081",
+        "Description":  "Verify card close fails when minimum due is pending",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  83,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_082",
+        "Description":  "Verify card close fails when penalty_applied=true",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  84,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_083",
+        "Description":  "Verify already closed card cannot be closed again",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  85,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_084",
+        "Description":  "Verify another user cannot close someone else’s card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  86,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_085",
+        "Description":  "Verify UI close confirm modal closes zero-balance card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  87,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_086",
+        "Description":  "Verify UI shows outstanding balance warning before closing",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "20000"
+    },
+    {
+        "Row":  88,
+        "Scenario_ID":  "CC_S_008",
+        "Requirement_ID":  "CC_REQ_008",
+        "Testcase_ID":  "CC_TC_087",
+        "Description":  "Verify closed card does not show Close Card button in UI",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  89,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_015",
+        "Testcase_ID":  "CC_TC_088",
+        "Description":  "Verify missing auth token cannot access user cards",
+        "Auth_State":  "no_token",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  90,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_015",
+        "Testcase_ID":  "CC_TC_089",
+        "Description":  "Verify expired or invalid token cannot access card details",
+        "Auth_State":  "invalid_token",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  91,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_015",
+        "Testcase_ID":  "CC_TC_090",
+        "Description":  "Verify one user cannot purchase using another user’s card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  92,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_015",
+        "Testcase_ID":  "CC_TC_091",
+        "Description":  "Verify one user cannot block another user’s card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  93,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_015",
+        "Testcase_ID":  "CC_TC_092",
+        "Description":  "Verify one user cannot delete another user’s card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  94,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_015",
+        "Testcase_ID":  "CC_TC_093",
+        "Description":  "Verify non-existent card ID is handled safely",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  95,
+        "Scenario_ID":  "CC_S_015",
+        "Requirement_ID":  "CC_REQ_015",
+        "Testcase_ID":  "CC_TC_094",
+        "Description":  "Verify admin role cannot manage customer card through customer endpoint unless owner",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  96,
+        "Scenario_ID":  "CC_S_016",
+        "Requirement_ID":  "CC_REQ_016",
+        "Testcase_ID":  "CC_TC_095",
+        "Description":  "Max 2 active cards - 3rd application rejected",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "10000"
+    },
+    {
+        "Row":  97,
+        "Scenario_ID":  "CC_S_016",
+        "Requirement_ID":  "CC_REQ_016",
+        "Testcase_ID":  "CC_TC_096",
+        "Description":  "Duplicate active tier - entry user applies for 2nd entry card",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "5000"
+    },
+    {
+        "Row":  98,
+        "Scenario_ID":  "CC_S_016",
+        "Requirement_ID":  "CC_REQ_016",
+        "Testcase_ID":  "CC_TC_097",
+        "Description":  "Re-application cooldown - rejected user reapplies within 30 days",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  99,
+        "Scenario_ID":  "CC_S_016",
+        "Requirement_ID":  "CC_REQ_016",
+        "Testcase_ID":  "CC_TC_098",
+        "Description":  "Card upgrade path - entry user applies premium without closing entry",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  100,
+        "Scenario_ID":  "CC_S_017",
+        "Requirement_ID":  "CC_REQ_017",
+        "Testcase_ID":  "CC_TC_099",
+        "Description":  "Apply returns pending_verification state not active",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  101,
+        "Scenario_ID":  "CC_S_017",
+        "Requirement_ID":  "CC_REQ_017",
+        "Testcase_ID":  "CC_TC_100",
+        "Description":  "Fetch card in pending_verification state",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  102,
+        "Scenario_ID":  "CC_S_017",
+        "Requirement_ID":  "CC_REQ_017",
+        "Testcase_ID":  "CC_TC_101",
+        "Description":  "Purchase on pending_verification card blocked",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  103,
+        "Scenario_ID":  "CC_S_017",
+        "Requirement_ID":  "CC_REQ_017",
+        "Testcase_ID":  "CC_TC_102",
+        "Description":  "Background verification approved -\u003e active",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  104,
+        "Scenario_ID":  "CC_S_017",
+        "Requirement_ID":  "CC_REQ_017",
+        "Testcase_ID":  "CC_TC_103",
+        "Description":  "Background verification rejected -\u003e rejected state",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  105,
+        "Scenario_ID":  "CC_S_018",
+        "Requirement_ID":  "CC_REQ_018",
+        "Testcase_ID":  "CC_TC_104",
+        "Description":  "Expiry date field present in response",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "10000"
+    },
+    {
+        "Row":  106,
+        "Scenario_ID":  "CC_S_018",
+        "Requirement_ID":  "CC_REQ_018",
+        "Testcase_ID":  "CC_TC_105",
+        "Description":  "Card renewal - new card issued, old deactivated (UI)",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "10000"
+    },
+    {
+        "Row":  107,
+        "Scenario_ID":  "CC_S_018",
+        "Requirement_ID":  "CC_REQ_018",
+        "Testcase_ID":  "CC_TC_106",
+        "Description":  "Renewal on non-expired card - too early (UI)",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "10000"
+    },
+    {
+        "Row":  108,
+        "Scenario_ID":  "CC_S_019",
+        "Requirement_ID":  "CC_REQ_019",
+        "Testcase_ID":  "CC_TC_107",
+        "Description":  "Zero amount purchase amount=0",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  109,
+        "Scenario_ID":  "CC_S_019",
+        "Requirement_ID":  "CC_REQ_019",
+        "Testcase_ID":  "CC_TC_108",
+        "Description":  "Negative amount purchase amount=-500",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  110,
+        "Scenario_ID":  "CC_S_019",
+        "Requirement_ID":  "CC_REQ_019",
+        "Testcase_ID":  "CC_TC_109",
+        "Description":  "Refund flow - available limit increases",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  111,
+        "Scenario_ID":  "CC_S_019",
+        "Requirement_ID":  "CC_REQ_019",
+        "Testcase_ID":  "CC_TC_110",
+        "Description":  "Partial refund - limit increases by refund amount only",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  112,
+        "Scenario_ID":  "CC_S_019",
+        "Requirement_ID":  "CC_REQ_019",
+        "Testcase_ID":  "CC_TC_111",
+        "Description":  "Single transaction \u003e 80% of credit limit",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  113,
+        "Scenario_ID":  "CC_S_019",
+        "Requirement_ID":  "CC_REQ_019",
+        "Testcase_ID":  "CC_TC_112",
+        "Description":  "Merchant blacklist category rejected",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  114,
+        "Scenario_ID":  "CC_S_019",
+        "Requirement_ID":  "CC_REQ_019",
+        "Testcase_ID":  "CC_TC_113",
+        "Description":  "Daily transaction count exceeded",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "5000"
+    },
+    {
+        "Row":  115,
+        "Scenario_ID":  "CC_S_020",
+        "Requirement_ID":  "CC_REQ_020",
+        "Testcase_ID":  "CC_TC_114",
+        "Description":  "Overpayment - pay more than outstanding",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  116,
+        "Scenario_ID":  "CC_S_020",
+        "Requirement_ID":  "CC_REQ_020",
+        "Testcase_ID":  "CC_TC_115",
+        "Description":  "Partial payment below minimum due",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  117,
+        "Scenario_ID":  "CC_S_020",
+        "Requirement_ID":  "CC_REQ_020",
+        "Testcase_ID":  "CC_TC_116",
+        "Description":  "Multiple repayments same day",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  118,
+        "Scenario_ID":  "CC_S_020",
+        "Requirement_ID":  "CC_REQ_020",
+        "Testcase_ID":  "CC_TC_117",
+        "Description":  "Grace period payment - no penalty",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  119,
+        "Scenario_ID":  "CC_S_020",
+        "Requirement_ID":  "CC_REQ_020",
+        "Testcase_ID":  "CC_TC_118",
+        "Description":  "Billing date edge - card created on 31st",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  120,
+        "Scenario_ID":  "CC_S_021",
+        "Requirement_ID":  "CC_REQ_021",
+        "Testcase_ID":  "CC_TC_119",
+        "Description":  "Statement with valid date range filter",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  121,
+        "Scenario_ID":  "CC_S_021",
+        "Requirement_ID":  "CC_REQ_021",
+        "Testcase_ID":  "CC_TC_120",
+        "Description":  "Empty date range - no transactions in period",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "0"
+    },
+    {
+        "Row":  122,
+        "Scenario_ID":  "CC_S_021",
+        "Requirement_ID":  "CC_REQ_021",
+        "Testcase_ID":  "CC_TC_121",
+        "Description":  "Future from_date -\u003e 400",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  123,
+        "Scenario_ID":  "CC_S_021",
+        "Requirement_ID":  "CC_REQ_021",
+        "Testcase_ID":  "CC_TC_122",
+        "Description":  "from_date before card creation date",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "30000"
+    },
+    {
+        "Row":  124,
+        "Scenario_ID":  "CC_S_021",
+        "Requirement_ID":  "CC_REQ_021",
+        "Testcase_ID":  "CC_TC_123",
+        "Description":  "500+ transactions pagination",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "110000"
+    },
+    {
+        "Row":  125,
+        "Scenario_ID":  "CC_S_022",
+        "Requirement_ID":  "CC_REQ_022",
+        "Testcase_ID":  "CC_TC_124",
+        "Description":  "Card number masked in all responses",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "5000"
+    },
+    {
+        "Row":  126,
+        "Scenario_ID":  "CC_S_022",
+        "Requirement_ID":  "CC_REQ_022",
+        "Testcase_ID":  "CC_TC_125",
+        "Description":  "CVV absent from all API responses",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  "5000"
+    },
+    {
+        "Row":  127,
+        "Scenario_ID":  "CC_S_022",
+        "Requirement_ID":  "CC_REQ_022",
+        "Testcase_ID":  "CC_TC_126",
+        "Description":  "Session token expires mid-purchase",
+        "Auth_State":  "invalid_token",
+        "Expected_Result":  "5000"
+    },
+    {
+        "Row":  128,
+        "Scenario_ID":  "CC_S_022",
+        "Requirement_ID":  "CC_REQ_022",
+        "Testcase_ID":  "CC_TC_127",
+        "Description":  "Idempotency - same apply request twice",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  129,
+        "Scenario_ID":  "CC_S_023",
+        "Requirement_ID":  "CC_REQ_023",
+        "Testcase_ID":  "CC_TC_128",
+        "Description":  "Decimal precision - limit 25500.50",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  130,
+        "Scenario_ID":  "CC_S_023",
+        "Requirement_ID":  "CC_REQ_023",
+        "Testcase_ID":  "CC_TC_129",
+        "Description":  "Currency symbol ₹ in error messages",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    },
+    {
+        "Row":  131,
+        "Scenario_ID":  "CC_S_023",
+        "Requirement_ID":  "CC_REQ_023",
+        "Testcase_ID":  "CC_TC_130",
+        "Description":  "Duplicate apply race condition",
+        "Auth_State":  "logged_in",
+        "Expected_Result":  ""
+    }
+]

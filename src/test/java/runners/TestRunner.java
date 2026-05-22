@@ -17,7 +17,7 @@ import io.cucumber.testng.CucumberOptions;
                 "junit:target/cucumber-reports/cucumber.xml"
         },
         monochrome = true,
-        publish = true,
+        publish = false,
         tags = "@OccupationValidation"
 )
 

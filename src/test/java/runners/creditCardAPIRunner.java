@@ -8,13 +8,14 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"stepdefinitions", "Hooks"},
         plugin = {
                 "pretty",
-                "html:target/cucumber-reports/creditcardAPI/cucumber.html",
-                "json:target/cucumber-reports/creditcardAPI/cucumber.json",
-                "junit:target/cucumber-reports/creditcardAPI/cucumber.xml"
+                "html:target/cucumber-reports/cucumber.html",
+                "json:target/cucumber-reports/cucumber.json",
+                "junit:target/cucumber-reports/cucumber.xml",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
         },
         tags = "@CreditCardAPI",
         monochrome = true,
-        publish = true
+        publish = false
 )
 public class creditCardAPIRunner extends AbstractTestNGCucumberTests{
 }
