@@ -1,0 +1,963 @@
+2026-05-23 18:26:51 INFO  Browser Started
+2026-05-23 18:26:53 INFO  Application Launched
+2026-05-23 18:27:07 INFO  Scenario Status : FAILED
+2026-05-23 18:27:08 INFO  No Cleanup Required
+2026-05-23 18:27:08 INFO  TestDataStore Cleared
+2026-05-23 18:27:13 INFO  Scenario Completed : Verify valid Bank account creation
+2026-05-23 18:27:17 INFO  Browser Started
+2026-05-23 18:27:20 INFO  Application Launched
+2026-05-23 18:27:33 INFO  Login Completed
+2026-05-23 18:27:34 INFO  Accounts Route Opened Successfully
+2026-05-23 18:27:37 INFO  Open New Account Clicked
+2026-05-23 18:27:38 INFO  Scenario Status : FAILED
+2026-05-23 18:36:23 INFO  Browser Started
+2026-05-23 18:36:23 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:36:25 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:36:25 INFO  Logging in with valid user credentials
+2026-05-23 18:36:31 INFO  [PASS] User logged in successfully
+2026-05-23 18:36:31 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:36:31 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:36:31 INFO  Measuring FD dashboard page load time
+2026-05-23 18:36:33 INFO  [PASS] FD dashboard load time recorded: 1604 ms
+2026-05-23 18:36:33 INFO  Validating FD dashboard performance threshold: 5000 ms
+2026-05-23 18:36:33 INFO  [PASS] FD dashboard performance validation successful
+2026-05-23 18:36:33 INFO  Browser Closed
+2026-05-23 18:36:37 INFO  Browser Started
+2026-05-23 18:36:37 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:36:39 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:36:39 INFO  Logging in with valid user credentials
+2026-05-23 18:36:45 INFO  [PASS] User logged in successfully
+2026-05-23 18:36:45 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:36:45 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:36:45 INFO  Creating FD with details:
+2026-05-23 18:36:45 INFO  Account Type: current
+2026-05-23 18:36:45 INFO  Amount: 5000
+2026-05-23 18:36:45 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:36:46 INFO  [PASS] Create FD modal opened
+2026-05-23 18:36:47 INFO  [PASS] Current account selected
+2026-05-23 18:36:47 INFO  [PASS] Deposit amount entered: 5000
+2026-05-23 18:36:47 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:36:47 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:36:47 INFO  Performing FD action: View Details
+2026-05-23 18:36:48 INFO  [PASS] View Details action performed successfully
+2026-05-23 18:36:48 INFO  Validating navigation result: FD details
+2026-05-23 18:36:48 INFO  [PASS] Navigation to FD details page successful
+2026-05-23 18:36:49 INFO  Browser Closed
+2026-05-23 18:36:53 INFO  Browser Started
+2026-05-23 18:36:53 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:36:55 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:36:55 INFO  Logging in with valid user credentials
+2026-05-23 18:36:59 INFO  [PASS] User logged in successfully
+2026-05-23 18:36:59 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:37:00 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:37:00 INFO  Creating multiple FDs
+2026-05-23 18:37:00 INFO  FD Count: 2
+2026-05-23 18:37:00 INFO  Account Type: any
+2026-05-23 18:37:00 INFO  Amount: 1000
+2026-05-23 18:37:00 INFO  Tenure: 12 months (7% p.a.) - 1 year
+2026-05-23 18:37:01 INFO  [PASS] Create FD modal opened
+2026-05-23 18:37:01 INFO  [PASS] Default linked account selected
+2026-05-23 18:37:01 INFO  [PASS] Deposit amount entered: 1000
+2026-05-23 18:37:02 INFO  [PASS] Tenure selected: 12 months (7% p.a.) - 1 year
+2026-05-23 18:37:02 INFO  [PASS] FD created successfully: 1
+2026-05-23 18:37:03 INFO  [PASS] Create FD modal opened
+2026-05-23 18:37:04 INFO  Browser Closed
+2026-05-23 18:37:07 INFO  Browser Started
+2026-05-23 18:37:07 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:37:10 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:37:10 INFO  Logging in with valid user credentials
+2026-05-23 18:37:17 INFO  [PASS] User logged in successfully
+2026-05-23 18:37:17 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:37:17 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:37:17 INFO  Validating FD page scroll behavior: scrollable
+2026-05-23 18:37:17 INFO  [PASS] FD page scroll validation successful
+2026-05-23 18:37:18 INFO  Browser Closed
+2026-05-23 18:37:20 INFO  Browser Started
+2026-05-23 18:37:20 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:37:23 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:37:23 INFO  Logging in with valid user credentials
+2026-05-23 18:37:29 INFO  [PASS] User logged in successfully
+2026-05-23 18:37:29 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:37:30 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:37:30 INFO  Starting FD creation process
+2026-05-23 18:37:30 INFO  Clicking Create New FD button
+2026-05-23 18:37:30 INFO  Selecting linked account
+2026-05-23 18:37:31 INFO  Entering FD amount: 2000
+2026-05-23 18:37:31 INFO  Selecting FD tenure: 12 months
+2026-05-23 18:37:31 INFO  Submitting FD creation request
+2026-05-23 18:37:31 INFO  [PASS] FD creation request submitted successfully
+2026-05-23 18:37:31 INFO  Verifying FD creation success message
+2026-05-23 18:37:37 INFO  [PASS] FD created successfully
+2026-05-23 18:37:37 INFO  Browser Closed
+2026-05-23 18:37:40 INFO  Browser Started
+2026-05-23 18:37:40 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:37:44 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:37:44 INFO  Logging in with valid user credentials
+2026-05-23 18:37:50 INFO  [PASS] User logged in successfully
+2026-05-23 18:37:50 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:37:50 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:37:50 INFO  User clicks action: Create New FD
+2026-05-23 18:37:51 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:37:51 INFO  Validating Create FD modal state: displayed
+2026-05-23 18:37:51 INFO  [PASS] Create FD modal is displayed successfully
+2026-05-23 18:37:51 INFO  User clicks action: Cancel
+2026-05-23 18:37:52 INFO  [PASS] Cancel button clicked
+2026-05-23 18:37:52 INFO  Validating Create FD modal state: closed
+2026-05-23 18:37:52 INFO  [PASS] Create FD modal is closed successfully
+2026-05-23 18:37:52 INFO  Validating user remains on page: fixed deposit
+2026-05-23 18:37:52 INFO  [PASS] User remained on Fixed Deposit page
+2026-05-23 18:37:52 INFO  Browser Closed
+2026-05-23 18:37:55 INFO  Browser Started
+2026-05-23 18:37:55 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:37:58 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:37:58 INFO  Logging in with valid user credentials
+2026-05-23 18:38:05 INFO  [PASS] User logged in successfully
+2026-05-23 18:38:05 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:38:05 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:38:05 INFO  User clicks action: Create New FD
+2026-05-23 18:38:07 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:38:07 INFO  Validating Create FD modal state: displayed
+2026-05-23 18:38:07 INFO  [PASS] Create FD modal is displayed successfully
+2026-05-23 18:38:07 INFO  User clicks action: Close Icon
+2026-05-23 18:38:07 INFO  [PASS] Close icon clicked
+2026-05-23 18:38:07 INFO  Validating Create FD modal state: closed
+2026-05-23 18:38:07 INFO  [PASS] Create FD modal is closed successfully
+2026-05-23 18:38:07 INFO  Validating user remains on page: fixed deposit
+2026-05-23 18:38:07 INFO  [PASS] User remained on Fixed Deposit page
+2026-05-23 18:38:09 INFO  Browser Closed
+2026-05-23 18:38:12 INFO  Browser Started
+2026-05-23 18:38:12 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:38:15 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:38:15 INFO  Logging in with valid user credentials
+2026-05-23 18:38:20 INFO  [PASS] User logged in successfully
+2026-05-23 18:38:20 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:38:20 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:38:20 INFO  User clicks action: Create New FD
+2026-05-23 18:38:21 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:38:21 INFO  Validating auto-selected account type: first
+2026-05-23 18:38:22 INFO  [PASS] First account is auto-selected successfully
+2026-05-23 18:38:24 INFO  Browser Closed
+2026-05-23 18:38:26 INFO  Browser Started
+2026-05-23 18:38:26 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:38:30 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:38:30 INFO  Logging in with valid user credentials
+2026-05-23 18:38:37 INFO  [PASS] User logged in successfully
+2026-05-23 18:38:37 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:38:37 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:38:37 INFO  User clicks action: Create New FD
+2026-05-23 18:38:38 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:38:38 INFO  Entering FD amount: 5000
+2026-05-23 18:38:38 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:38:38 INFO  Validating deposit amount field status: accepted
+2026-05-23 18:38:38 INFO  [PASS] Deposit amount accepted successfully
+2026-05-23 18:38:39 INFO  Browser Closed
+2026-05-23 18:38:42 INFO  Browser Started
+2026-05-23 18:38:42 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:38:44 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:38:44 INFO  Logging in with valid user credentials
+2026-05-23 18:38:51 INFO  [PASS] User logged in successfully
+2026-05-23 18:38:51 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:38:51 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:38:51 INFO  User clicks action: Create New FD
+2026-05-23 18:38:52 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:38:52 INFO  Entering FD amount: 500
+2026-05-23 18:38:52 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:38:52 INFO  Selecting FD tenure: 12 months
+2026-05-23 18:38:53 INFO  [PASS] FD tenure selected successfully
+2026-05-23 18:38:53 INFO  Selecting linked account for FD creation
+2026-05-23 18:38:53 INFO  [PASS] Account selected successfully
+2026-05-23 18:38:53 INFO  Validating FD submission state: prevented
+2026-05-23 18:38:53 INFO  [PASS] FD submission was prevented as expected
+2026-05-23 18:38:54 INFO  Browser Closed
+2026-05-23 18:38:56 INFO  Browser Started
+2026-05-23 18:38:56 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:39:00 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:39:00 INFO  Logging in with valid user credentials
+2026-05-23 18:39:05 INFO  [PASS] User logged in successfully
+2026-05-23 18:39:05 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:39:05 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:39:05 INFO  User clicks action: Create New FD
+2026-05-23 18:39:07 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:39:07 INFO  Entering FD amount: 0
+2026-05-23 18:39:07 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:39:07 INFO  Selecting FD tenure: 12 months
+2026-05-23 18:39:07 INFO  [PASS] FD tenure selected successfully
+2026-05-23 18:39:07 INFO  Validating zero amount FD submission state: prevented
+2026-05-23 18:39:07 INFO  [PASS] Zero amount FD submission prevented successfully
+2026-05-23 18:39:08 INFO  Browser Closed
+2026-05-23 18:39:10 INFO  Browser Started
+2026-05-23 18:39:10 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:39:13 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:39:13 INFO  Logging in with valid user credentials
+2026-05-23 18:39:19 INFO  [PASS] User logged in successfully
+2026-05-23 18:39:19 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:39:19 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:39:19 INFO  User clicks action: Create New FD
+2026-05-23 18:39:20 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:39:20 INFO  Entering FD amount: -1000
+2026-05-23 18:39:21 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:39:21 INFO  Selecting FD tenure: 12 months
+2026-05-23 18:39:21 INFO  [PASS] FD tenure selected successfully
+2026-05-23 18:39:21 INFO  Validating negative amount FD submission state: prevented
+2026-05-23 18:39:21 INFO  [PASS] Negative amount FD submission prevented successfully
+2026-05-23 18:39:22 INFO  Browser Closed
+2026-05-23 18:39:25 INFO  Browser Started
+2026-05-23 18:39:25 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:39:27 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:39:27 INFO  Logging in with valid user credentials
+2026-05-23 18:39:34 INFO  [PASS] User logged in successfully
+2026-05-23 18:39:34 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:39:34 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:39:34 INFO  User clicks action: Create New FD
+2026-05-23 18:39:34 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:39:34 INFO  User selecting account type: low balance
+2026-05-23 18:39:35 INFO  [PASS] Low balance account selected successfully
+2026-05-23 18:39:35 INFO  Entering FD amount: 1000000
+2026-05-23 18:39:35 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:39:35 INFO  Selecting FD tenure: 12 months
+2026-05-23 18:39:35 INFO  [PASS] FD tenure selected successfully
+2026-05-23 18:39:35 INFO  Clicking Create FD submit button
+2026-05-23 18:39:36 INFO  [PASS] Create FD submit button clicked
+2026-05-23 18:39:36 INFO  Browser Closed
+2026-05-23 18:39:38 INFO  Browser Started
+2026-05-23 18:39:38 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:39:42 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:39:42 INFO  Logging in with valid user credentials
+2026-05-23 18:39:48 INFO  [PASS] User logged in successfully
+2026-05-23 18:39:48 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:39:49 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:39:49 INFO  User clicks action: Create New FD
+2026-05-23 18:39:50 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:39:50 INFO  User clicks action: tenure
+2026-05-23 18:39:50 WARN  [WARN] Unknown action provided: tenure
+2026-05-23 18:39:50 INFO  Validating display of: tenure options
+2026-05-23 18:39:50 INFO  [PASS] Tenure options displayed successfully
+2026-05-23 18:39:51 INFO  Browser Closed
+2026-05-23 18:39:54 INFO  Browser Started
+2026-05-23 18:39:54 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:39:56 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:39:56 INFO  Logging in with valid user credentials
+2026-05-23 18:40:03 INFO  [PASS] User logged in successfully
+2026-05-23 18:40:03 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:40:03 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:40:03 INFO  User clicks action: Create New FD
+2026-05-23 18:40:04 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:40:04 INFO  Entering FD amount: 5000
+2026-05-23 18:40:04 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:40:04 INFO  Validating enforcement rule: create fd disabled
+2026-05-23 18:40:04 INFO  [PASS] Create FD disabled validation enforced successfully
+2026-05-23 18:40:05 INFO  Browser Closed
+2026-05-23 18:40:08 INFO  Browser Started
+2026-05-23 18:40:08 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:40:12 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:40:12 INFO  Logging in with valid user credentials
+2026-05-23 18:40:20 INFO  [PASS] User logged in successfully
+2026-05-23 18:40:20 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:40:20 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:40:20 INFO  User clicks action: Create New FD
+2026-05-23 18:40:21 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:40:21 INFO  Selecting tenure option: 3 months (4.5% p.a.)
+2026-05-23 18:40:21 INFO  [PASS] Tenure selected successfully: 3 months (4.5% p.a.)
+2026-05-23 18:40:21 INFO  Validating interest rate: 4.5
+2026-05-23 18:40:21 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:40:22 INFO  Browser Closed
+2026-05-23 18:40:25 INFO  Browser Started
+2026-05-23 18:40:25 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:40:27 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:40:27 INFO  Logging in with valid user credentials
+2026-05-23 18:40:35 INFO  [PASS] User logged in successfully
+2026-05-23 18:40:35 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:40:35 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:40:35 INFO  User clicks action: Create New FD
+2026-05-23 18:40:36 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:40:36 INFO  Selecting tenure option: 6 months (5.5% p.a.)
+2026-05-23 18:40:37 INFO  [PASS] Tenure selected successfully: 6 months (5.5% p.a.)
+2026-05-23 18:40:37 INFO  Validating interest rate: 5.5
+2026-05-23 18:40:37 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:40:37 INFO  Browser Closed
+2026-05-23 18:40:40 INFO  Browser Started
+2026-05-23 18:40:40 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:40:43 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:40:43 INFO  Logging in with valid user credentials
+2026-05-23 18:40:50 INFO  [PASS] User logged in successfully
+2026-05-23 18:40:50 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:40:50 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:40:50 INFO  User clicks action: Create New FD
+2026-05-23 18:40:52 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:40:52 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:40:52 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:40:52 INFO  Validating interest rate: 7
+2026-05-23 18:40:52 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:40:54 INFO  Browser Closed
+2026-05-23 18:40:57 INFO  Browser Started
+2026-05-23 18:40:57 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:41:00 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:41:00 INFO  Logging in with valid user credentials
+2026-05-23 18:41:06 INFO  [PASS] User logged in successfully
+2026-05-23 18:41:06 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:41:06 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:41:06 INFO  User clicks action: Create New FD
+2026-05-23 18:41:07 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:41:07 INFO  Selecting tenure option: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:41:07 INFO  [PASS] Tenure selected successfully: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:41:07 INFO  Validating interest rate: 8.5
+2026-05-23 18:41:07 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:41:08 INFO  Browser Closed
+2026-05-23 18:41:11 INFO  Browser Started
+2026-05-23 18:41:11 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:41:13 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:41:13 INFO  Logging in with valid user credentials
+2026-05-23 18:41:20 INFO  [PASS] User logged in successfully
+2026-05-23 18:41:20 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:41:20 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:41:20 INFO  User clicks action: Create New FD
+2026-05-23 18:41:21 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:41:21 INFO  Selecting tenure option: 60 months (8.5% p.a.) - 5 years
+2026-05-23 18:41:21 INFO  [PASS] Tenure selected successfully: 60 months (8.5% p.a.) - 5 years
+2026-05-23 18:41:21 INFO  Validating interest rate: 8.5
+2026-05-23 18:41:21 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:41:22 INFO  Browser Closed
+2026-05-23 18:41:25 INFO  Browser Started
+2026-05-23 18:41:25 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:41:28 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:41:28 INFO  Logging in with valid user credentials
+2026-05-23 18:41:35 INFO  [PASS] User logged in successfully
+2026-05-23 18:41:35 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:41:35 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:41:35 INFO  User clicks action: Create New FD
+2026-05-23 18:41:36 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:41:36 INFO  Selecting tenure option: 61 months (9% p.a.)
+2026-05-23 18:41:36 INFO  [PASS] Tenure selected successfully: 61 months (9% p.a.)
+2026-05-23 18:41:36 INFO  Validating interest rate: 9
+2026-05-23 18:41:36 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:41:37 INFO  Browser Closed
+2026-05-23 18:41:39 INFO  Browser Started
+2026-05-23 18:41:39 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:41:42 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:41:42 INFO  Logging in with valid user credentials
+2026-05-23 18:41:49 INFO  [PASS] User logged in successfully
+2026-05-23 18:41:49 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:41:49 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:41:49 INFO  User clicks action: Create New FD
+2026-05-23 18:41:50 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:41:50 INFO  Selecting tenure option: 71 months (9% p.a.)
+2026-05-23 18:41:51 INFO  [PASS] Tenure selected successfully: 71 months (9% p.a.)
+2026-05-23 18:41:51 INFO  Validating interest rate: 9
+2026-05-23 18:41:51 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:41:51 INFO  Browser Closed
+2026-05-23 18:41:54 INFO  Browser Started
+2026-05-23 18:41:54 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:41:57 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:41:57 INFO  Logging in with valid user credentials
+2026-05-23 18:42:04 INFO  [PASS] User logged in successfully
+2026-05-23 18:42:04 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:42:04 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:42:04 INFO  User clicks action: Create New FD
+2026-05-23 18:42:05 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:42:05 INFO  Selecting tenure option: 72 months (10% p.a.) - 6 years
+2026-05-23 18:42:05 INFO  [PASS] Tenure selected successfully: 72 months (10% p.a.) - 6 years
+2026-05-23 18:42:05 INFO  Validating interest rate: 10
+2026-05-23 18:42:05 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:42:06 INFO  Browser Closed
+2026-05-23 18:42:08 INFO  Browser Started
+2026-05-23 18:42:08 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:42:11 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:42:11 INFO  Logging in with valid user credentials
+2026-05-23 18:42:18 INFO  [PASS] User logged in successfully
+2026-05-23 18:42:18 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:42:18 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:42:18 INFO  User clicks action: Create New FD
+2026-05-23 18:42:19 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:42:19 INFO  Selecting tenure option: 84 months (10% p.a.) - 7 years
+2026-05-23 18:42:19 INFO  [PASS] Tenure selected successfully: 84 months (10% p.a.) - 7 years
+2026-05-23 18:42:19 INFO  Validating interest rate: 10
+2026-05-23 18:42:19 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:42:20 INFO  Browser Closed
+2026-05-23 18:42:22 INFO  Browser Started
+2026-05-23 18:42:22 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:42:25 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:42:25 INFO  Logging in with valid user credentials
+2026-05-23 18:42:32 INFO  [PASS] User logged in successfully
+2026-05-23 18:42:32 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:42:32 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:42:32 INFO  User clicks action: Create New FD
+2026-05-23 18:42:34 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:42:34 INFO  Selecting tenure option: 96 months (12% p.a.) - 8 years
+2026-05-23 18:42:34 INFO  [PASS] Tenure selected successfully: 96 months (12% p.a.) - 8 years
+2026-05-23 18:42:34 INFO  Validating interest rate: 12
+2026-05-23 18:42:34 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:42:36 INFO  Browser Closed
+2026-05-23 18:42:39 INFO  Browser Started
+2026-05-23 18:42:39 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:42:42 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:42:42 INFO  Logging in with valid user credentials
+2026-05-23 18:42:48 INFO  [PASS] User logged in successfully
+2026-05-23 18:42:48 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:42:48 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:42:48 INFO  User clicks action: Create New FD
+2026-05-23 18:42:49 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:42:49 INFO  Selecting tenure option: 108 months (12% p.a.) - 9 years
+2026-05-23 18:42:49 INFO  [PASS] Tenure selected successfully: 108 months (12% p.a.) - 9 years
+2026-05-23 18:42:49 INFO  Validating interest rate: 12
+2026-05-23 18:42:49 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:42:51 INFO  Browser Closed
+2026-05-23 18:42:54 INFO  Browser Started
+2026-05-23 18:42:54 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:42:57 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:42:57 INFO  Logging in with valid user credentials
+2026-05-23 18:43:03 INFO  [PASS] User logged in successfully
+2026-05-23 18:43:03 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:43:04 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:43:04 INFO  User clicks action: Create New FD
+2026-05-23 18:43:05 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:43:05 INFO  Selecting tenure option: 120 months (15% p.a.) - 10 years
+2026-05-23 18:43:05 INFO  [PASS] Tenure selected successfully: 120 months (15% p.a.) - 10 years
+2026-05-23 18:43:05 INFO  Validating interest rate: 15
+2026-05-23 18:43:05 INFO  [PASS] Interest rate validated successfully
+2026-05-23 18:43:07 INFO  Browser Closed
+2026-05-23 18:43:09 INFO  Browser Started
+2026-05-23 18:43:09 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:43:13 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:43:13 INFO  Logging in with valid user credentials
+2026-05-23 18:43:20 INFO  [PASS] User logged in successfully
+2026-05-23 18:43:20 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:43:20 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:43:20 INFO  User clicks action: Create New FD
+2026-05-23 18:43:21 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:43:21 INFO  Validating interest rate field state: read only
+2026-05-23 18:43:21 INFO  [PASS] Interest rate field is read-only as expected
+2026-05-23 18:43:22 INFO  Browser Closed
+2026-05-23 18:43:26 INFO  Browser Started
+2026-05-23 18:43:26 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:43:28 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:43:28 INFO  Logging in with valid user credentials
+2026-05-23 18:43:35 INFO  [PASS] User logged in successfully
+2026-05-23 18:43:35 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:43:35 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:43:35 INFO  User clicks action: Create New FD
+2026-05-23 18:43:36 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:43:37 INFO  Validating display of: investment summary
+2026-05-23 18:43:37 INFO  [PASS] Investment summary displayed successfully
+2026-05-23 18:43:38 INFO  Browser Closed
+2026-05-23 18:43:40 INFO  Browser Started
+2026-05-23 18:43:40 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:43:44 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:43:44 INFO  Logging in with valid user credentials
+2026-05-23 18:43:49 INFO  [PASS] User logged in successfully
+2026-05-23 18:43:49 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:43:49 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:43:49 INFO  User clicks action: Create New FD
+2026-05-23 18:43:50 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:43:51 INFO  Validating summary field: deposit amount
+2026-05-23 18:43:51 INFO  Expected value: 50,000
+2026-05-23 18:43:51 INFO  [PASS] Deposit amount in summary validated successfully
+2026-05-23 18:43:51 INFO  Validating summary field: interest rate
+2026-05-23 18:43:51 INFO  Expected value: 8.5
+2026-05-23 18:43:51 INFO  [PASS] Interest rate in summary validated successfully
+2026-05-23 18:43:51 INFO  Validating summary field: tenure
+2026-05-23 18:43:51 INFO  Expected value: 24
+2026-05-23 18:43:51 INFO  [PASS] Tenure in summary validated successfully
+2026-05-23 18:43:51 INFO  Validating summary field: interest earned
+2026-05-23 18:43:51 INFO  Expected value: 8861
+2026-05-23 18:43:51 INFO  [PASS] Interest earned in summary validated successfully
+2026-05-23 18:43:51 INFO  Validating summary field: maturity amount
+2026-05-23 18:43:51 INFO  Expected value: 58861
+2026-05-23 18:43:51 INFO  [PASS] Maturity amount in summary validated successfully
+2026-05-23 18:43:51 INFO  Validating summary field: roi
+2026-05-23 18:43:51 INFO  Expected value: 17.72
+2026-05-23 18:43:51 INFO  [PASS] ROI in summary validated successfully
+2026-05-23 18:43:52 INFO  Browser Closed
+2026-05-23 18:43:55 INFO  Browser Started
+2026-05-23 18:43:55 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:43:59 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:43:59 INFO  Logging in with valid user credentials
+2026-05-23 18:44:05 INFO  [PASS] User logged in successfully
+2026-05-23 18:44:05 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:44:05 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:44:05 INFO  User clicks action: Create New FD
+2026-05-23 18:44:07 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:44:07 INFO  Entering amount state: blank
+2026-05-23 18:44:07 INFO  [PASS] Deposit amount left blank
+2026-05-23 18:44:07 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:08 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:08 INFO  Validating Create FD button state: disabled
+2026-05-23 18:44:08 INFO  [PASS] Create FD button is disabled as expected
+2026-05-23 18:44:08 INFO  Browser Closed
+2026-05-23 18:44:11 INFO  Browser Started
+2026-05-23 18:44:11 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:44:14 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:44:14 INFO  Logging in with valid user credentials
+2026-05-23 18:44:21 INFO  [PASS] User logged in successfully
+2026-05-23 18:44:21 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:44:21 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:44:21 INFO  User clicks action: Create New FD
+2026-05-23 18:44:23 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:44:23 WARN  [WARN] FD amount left blank
+2026-05-23 18:44:23 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:23 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:23 INFO  Validating Create FD button state: disabled
+2026-05-23 18:44:23 INFO  [PASS] Create FD button is disabled as expected
+2026-05-23 18:44:24 INFO  Browser Closed
+2026-05-23 18:44:26 INFO  Browser Started
+2026-05-23 18:44:26 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:44:29 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:44:29 INFO  Logging in with valid user credentials
+2026-05-23 18:44:35 INFO  [PASS] User logged in successfully
+2026-05-23 18:44:35 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:44:35 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:44:35 INFO  User clicks action: Create New FD
+2026-05-23 18:44:36 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:44:36 INFO  Entering FD amount: 500
+2026-05-23 18:44:36 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:44:36 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:37 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:37 INFO  Validating Create FD button state: disabled
+2026-05-23 18:44:37 INFO  [PASS] Create FD button is disabled as expected
+2026-05-23 18:44:37 INFO  Browser Closed
+2026-05-23 18:44:40 INFO  Browser Started
+2026-05-23 18:44:40 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:44:43 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:44:43 INFO  Logging in with valid user credentials
+2026-05-23 18:44:49 INFO  [PASS] User logged in successfully
+2026-05-23 18:44:49 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:44:49 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:44:49 INFO  User clicks action: Create New FD
+2026-05-23 18:44:50 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:44:50 INFO  Entering FD amount: 0
+2026-05-23 18:44:50 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:44:50 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:51 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:44:51 INFO  Validating Create FD button state: disabled
+2026-05-23 18:44:51 INFO  [PASS] Create FD button is disabled as expected
+2026-05-23 18:44:51 INFO  Browser Closed
+2026-05-23 18:44:54 INFO  Browser Started
+2026-05-23 18:44:54 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:44:57 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:44:57 INFO  Logging in with valid user credentials
+2026-05-23 18:45:04 INFO  [PASS] User logged in successfully
+2026-05-23 18:45:04 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:45:04 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:45:04 INFO  User clicks action: Create New FD
+2026-05-23 18:45:05 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:45:05 INFO  Entering FD amount: -10000
+2026-05-23 18:45:05 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:45:05 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:45:05 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:45:05 INFO  Validating Create FD button state: disabled
+2026-05-23 18:45:06 INFO  [PASS] Create FD button is disabled as expected
+2026-05-23 18:45:06 INFO  Browser Closed
+2026-05-23 18:45:09 INFO  Browser Started
+2026-05-23 18:45:09 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:45:11 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:45:11 INFO  Logging in with valid user credentials
+2026-05-23 18:45:19 INFO  [PASS] User logged in successfully
+2026-05-23 18:45:19 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:45:19 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:45:19 INFO  User clicks action: Create New FD
+2026-05-23 18:45:20 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:45:20 INFO  Entering FD amount: 5000
+2026-05-23 18:45:20 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:45:20 INFO  Selecting tenure option: 
+2026-05-23 18:45:20 INFO  No tenure selected
+2026-05-23 18:45:20 INFO  Validating Create FD button state: disabled
+2026-05-23 18:45:20 INFO  [PASS] Create FD button is disabled as expected
+2026-05-23 18:45:21 INFO  Browser Closed
+2026-05-23 18:45:23 INFO  Browser Started
+2026-05-23 18:45:23 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:45:27 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:45:27 INFO  Logging in with valid user credentials
+2026-05-23 18:45:33 INFO  [PASS] User logged in successfully
+2026-05-23 18:45:33 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:45:33 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:45:33 INFO  User clicks action: Create New FD
+2026-05-23 18:45:34 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:45:34 INFO  Entering FD amount: 5000
+2026-05-23 18:45:35 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:45:35 INFO  Selecting tenure option: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:45:35 INFO  [PASS] Tenure selected successfully: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:45:35 INFO  Validating Create FD button state: enabled
+2026-05-23 18:45:35 INFO  [PASS] Create FD button is enabled as expected
+2026-05-23 18:45:36 INFO  Browser Closed
+2026-05-23 18:45:39 INFO  Browser Started
+2026-05-23 18:45:39 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:45:42 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:45:42 INFO  Logging in with valid user credentials
+2026-05-23 18:45:48 INFO  [PASS] User logged in successfully
+2026-05-23 18:45:48 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:45:48 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:45:48 INFO  User clicks action: Create New FD
+2026-05-23 18:45:49 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:45:49 INFO  Entering FD amount: 5000
+2026-05-23 18:45:50 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:45:50 INFO  Selecting tenure option: 
+2026-05-23 18:45:50 INFO  No tenure selected
+2026-05-23 18:45:50 INFO  Validating Create FD button state: disabled
+2026-05-23 18:45:50 INFO  [PASS] Create FD button is disabled as expected
+2026-05-23 18:45:50 INFO  Browser Closed
+2026-05-23 18:45:53 INFO  Browser Started
+2026-05-23 18:45:53 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:45:56 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:45:56 INFO  Logging in with valid user credentials
+2026-05-23 18:46:02 INFO  [PASS] User logged in successfully
+2026-05-23 18:46:02 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:46:03 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:46:03 INFO  User clicks action: Create New FD
+2026-05-23 18:46:04 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:46:04 INFO  Selecting account type: current
+2026-05-23 18:46:05 INFO  [PASS] Current account selected successfully
+2026-05-23 18:46:05 INFO  Entering FD amount: 5000
+2026-05-23 18:46:05 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:46:05 INFO  Selecting tenure option: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:46:05 INFO  [PASS] Tenure selected successfully: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:46:05 INFO  User clicks action: Create FD Submit
+2026-05-23 18:46:06 INFO  [PASS] Create FD submit button clicked
+2026-05-23 18:46:06 INFO  Validating display of: success message
+2026-05-23 18:46:11 INFO  [PASS] Success message displayed successfully
+2026-05-23 18:46:11 INFO  Validating display of: new fd
+2026-05-23 18:46:11 INFO  [PASS] New FD displayed successfully
+2026-05-23 18:46:12 INFO  Browser Closed
+2026-05-23 18:46:15 INFO  Browser Started
+2026-05-23 18:46:15 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:46:17 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:46:17 INFO  Logging in with valid user credentials
+2026-05-23 18:46:24 INFO  [PASS] User logged in successfully
+2026-05-23 18:46:24 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:46:24 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:46:24 INFO  Creating FD with details:
+2026-05-23 18:46:24 INFO  Account Type: any
+2026-05-23 18:46:24 INFO  Amount: 5000
+2026-05-23 18:46:24 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:46:24 INFO  [PASS] Create FD modal opened
+2026-05-23 18:46:25 INFO  [PASS] Default linked account selected
+2026-05-23 18:46:25 INFO  [PASS] Deposit amount entered: 5000
+2026-05-23 18:46:26 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:46:26 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:46:26 INFO  Validating FD in active list with amount: 5000
+2026-05-23 18:46:26 INFO  [PASS] New FD is visible in active list
+2026-05-23 18:46:26 INFO  [PASS] FD amount matches expected value
+2026-05-23 18:46:27 INFO  Browser Closed
+2026-05-23 18:46:29 INFO  Browser Started
+2026-05-23 18:46:29 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:46:34 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:46:34 INFO  Logging in with valid user credentials
+2026-05-23 18:46:41 INFO  [PASS] User logged in successfully
+2026-05-23 18:46:41 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:46:42 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:46:42 INFO  Creating FD with details:
+2026-05-23 18:46:42 INFO  Account Type: any
+2026-05-23 18:46:42 INFO  Amount: 2000
+2026-05-23 18:46:42 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:46:43 INFO  [PASS] Create FD modal opened
+2026-05-23 18:46:43 INFO  [PASS] Default linked account selected
+2026-05-23 18:46:43 INFO  [PASS] Deposit amount entered: 2000
+2026-05-23 18:46:44 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:46:44 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:46:44 INFO  Validating FD card amount: 2000
+2026-05-23 18:46:45 INFO  [PASS] FD card amount validated successfully
+2026-05-23 18:46:45 INFO  Browser Closed
+2026-05-23 18:46:48 INFO  Browser Started
+2026-05-23 18:46:48 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:46:52 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:46:52 INFO  Logging in with valid user credentials
+2026-05-23 18:46:58 INFO  [PASS] User logged in successfully
+2026-05-23 18:46:58 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:46:58 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:46:58 INFO  Creating FD with details:
+2026-05-23 18:46:58 INFO  Account Type: current
+2026-05-23 18:46:58 INFO  Amount: 5000
+2026-05-23 18:46:58 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:47:00 INFO  [PASS] Create FD modal opened
+2026-05-23 18:47:01 INFO  [PASS] Current account selected
+2026-05-23 18:47:01 INFO  [PASS] Deposit amount entered: 5000
+2026-05-23 18:47:01 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:47:02 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:47:02 INFO  Validating FD status: active
+2026-05-23 18:47:02 INFO  [PASS] FD status is active
+2026-05-23 18:47:03 INFO  Browser Closed
+2026-05-23 18:47:05 INFO  Browser Started
+2026-05-23 18:47:05 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:47:08 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:47:08 INFO  Logging in with valid user credentials
+2026-05-23 18:47:14 INFO  [PASS] User logged in successfully
+2026-05-23 18:47:14 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:47:14 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:47:14 INFO  Creating FD with details:
+2026-05-23 18:47:14 INFO  Account Type: current
+2026-05-23 18:47:14 INFO  Amount: 5000
+2026-05-23 18:47:14 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:47:15 INFO  [PASS] Create FD modal opened
+2026-05-23 18:47:15 INFO  [PASS] Current account selected
+2026-05-23 18:47:16 INFO  [PASS] Deposit amount entered: 5000
+2026-05-23 18:47:16 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:47:16 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:47:16 INFO  Validating remaining days display: displayed
+2026-05-23 18:47:16 INFO  [PASS] Remaining days displayed successfully
+2026-05-23 18:47:17 INFO  Browser Closed
+2026-05-23 18:47:19 INFO  Browser Started
+2026-05-23 18:47:19 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:47:22 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:47:22 INFO  Logging in with valid user credentials
+2026-05-23 18:47:28 INFO  [PASS] User logged in successfully
+2026-05-23 18:47:28 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:47:28 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:47:28 INFO  Storing current active FD count
+2026-05-23 18:47:28 INFO  [PASS] Current active FD count stored successfully
+2026-05-23 18:47:28 INFO  Creating FD with details:
+2026-05-23 18:47:28 INFO  Account Type: current
+2026-05-23 18:47:28 INFO  Amount: 5000
+2026-05-23 18:47:28 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:47:29 INFO  [PASS] Create FD modal opened
+2026-05-23 18:47:29 INFO  [PASS] Current account selected
+2026-05-23 18:47:29 INFO  [PASS] Deposit amount entered: 5000
+2026-05-23 18:47:30 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:47:30 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:47:30 INFO  Validating active FD count result: incremented
+2026-05-23 18:47:35 INFO  [PASS] Active FD count increment validated successfully
+2026-05-23 18:47:35 INFO  Browser Closed
+2026-05-23 18:47:40 INFO  Browser Started
+2026-05-23 18:47:40 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:47:43 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:47:43 INFO  Logging in with valid user credentials
+2026-05-23 18:47:50 INFO  [PASS] User logged in successfully
+2026-05-23 18:47:50 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:47:50 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:47:50 INFO  User clicks action: Create New FD
+2026-05-23 18:47:51 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:47:51 INFO  Selecting account type: current
+2026-05-23 18:47:51 INFO  [PASS] Current account selected successfully
+2026-05-23 18:47:51 INFO  Entering FD amount: 1000
+2026-05-23 18:47:52 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:47:52 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:47:52 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:47:52 INFO  User clicks action: Create FD Submit
+2026-05-23 18:47:52 INFO  [PASS] Create FD submit button clicked
+2026-05-23 18:47:52 INFO  Validating Create FD modal state: closed
+2026-05-23 18:47:53 INFO  [PASS] Create FD modal is closed successfully
+2026-05-23 18:47:53 INFO  Browser Closed
+2026-05-23 18:47:56 INFO  Browser Started
+2026-05-23 18:47:56 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:47:59 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:47:59 INFO  Logging in with valid user credentials
+2026-05-23 18:48:05 INFO  [PASS] User logged in successfully
+2026-05-23 18:48:05 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:48:05 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:48:05 INFO  User clicks action: Create New FD
+2026-05-23 18:48:06 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:48:06 INFO  Entering FD amount: 2500
+2026-05-23 18:48:07 INFO  [PASS] FD amount entered successfully
+2026-05-23 18:48:07 INFO  Selecting tenure option: 12 months (7% p.a.) - 1 year
+2026-05-23 18:48:07 INFO  [PASS] Tenure selected successfully: 12 months (7% p.a.) - 1 year
+2026-05-23 18:48:07 INFO  User clicks action: Cancel
+2026-05-23 18:48:07 INFO  [PASS] Cancel button clicked
+2026-05-23 18:48:07 INFO  User clicks action: Create New FD
+2026-05-23 18:48:08 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:48:08 INFO  Validating Create FD form state: reset
+2026-05-23 18:48:08 INFO  [PASS] Create FD form reset validated successfully
+2026-05-23 18:48:09 INFO  Browser Closed
+2026-05-23 18:48:11 INFO  Browser Started
+2026-05-23 18:48:11 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:48:14 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:48:14 INFO  Logging in with valid user credentials
+2026-05-23 18:48:20 INFO  [PASS] User logged in successfully
+2026-05-23 18:48:20 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:48:20 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:48:20 INFO  Refreshing browser 3 times
+2026-05-23 18:48:24 INFO  [PASS] Browser refreshed successfully 3 times
+2026-05-23 18:48:24 INFO  Validating FD page state: loaded
+2026-05-23 18:48:24 INFO  [PASS] FD page loaded successfully
+2026-05-23 18:48:26 INFO  Browser Closed
+2026-05-23 18:48:28 INFO  Browser Started
+2026-05-23 18:48:28 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:48:32 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:48:32 INFO  Logging in with valid user credentials
+2026-05-23 18:48:37 INFO  [PASS] User logged in successfully
+2026-05-23 18:48:37 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:48:39 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:48:39 INFO  User clicks action: Create New FD
+2026-05-23 18:48:40 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:48:40 INFO  Validating account masking status: masked
+2026-05-23 18:48:40 INFO  [PASS] Account number masking validated successfully
+2026-05-23 18:48:40 INFO  Browser Closed
+2026-05-23 18:48:43 INFO  Browser Started
+2026-05-23 18:48:43 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:48:46 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:48:46 INFO  Logging in with valid user credentials
+2026-05-23 18:48:53 INFO  [PASS] User logged in successfully
+2026-05-23 18:48:53 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:48:53 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:48:53 INFO  User clicks action: Create New FD
+2026-05-23 18:48:54 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:48:55 INFO  Validating summary currency format: INR
+2026-05-23 18:48:56 INFO  [PASS] Summary currency format validated successfully
+2026-05-23 18:48:58 INFO  Browser Closed
+2026-05-23 18:49:00 INFO  Browser Started
+2026-05-23 18:49:00 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:49:04 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:49:04 INFO  Logging in with valid user credentials
+2026-05-23 18:49:10 INFO  [PASS] User logged in successfully
+2026-05-23 18:49:10 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:49:10 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:49:10 INFO  Creating FD with details:
+2026-05-23 18:49:10 INFO  Account Type: current
+2026-05-23 18:49:10 INFO  Amount: 5000
+2026-05-23 18:49:10 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:49:11 INFO  [PASS] Create FD modal opened
+2026-05-23 18:49:11 INFO  [PASS] Current account selected
+2026-05-23 18:49:11 INFO  [PASS] Deposit amount entered: 5000
+2026-05-23 18:49:12 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:49:12 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:49:12 INFO  Validating FD card currency format: INR
+2026-05-23 18:49:15 INFO  [PASS] FD card currency format validated successfully
+2026-05-23 18:49:17 INFO  Browser Closed
+2026-05-23 18:49:19 INFO  Browser Started
+2026-05-23 18:49:19 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:49:22 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:49:22 INFO  Logging in with valid user credentials
+2026-05-23 18:49:29 INFO  [PASS] User logged in successfully
+2026-05-23 18:49:29 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:49:30 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:49:30 INFO  User clicks action: Create New FD
+2026-05-23 18:49:31 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:49:31 INFO  Validating keyboard navigation status: working
+2026-05-23 18:49:32 INFO  [PASS] Keyboard navigation validated successfully
+2026-05-23 18:49:32 INFO  Browser Closed
+2026-05-23 18:49:35 INFO  Browser Started
+2026-05-23 18:49:35 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:49:38 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:49:38 INFO  Logging in with valid user credentials
+2026-05-23 18:49:44 INFO  [PASS] User logged in successfully
+2026-05-23 18:49:44 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:49:45 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:49:45 INFO  Creating FD with details:
+2026-05-23 18:49:45 INFO  Account Type: current
+2026-05-23 18:49:45 INFO  Amount: 5000
+2026-05-23 18:49:45 INFO  Tenure: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:49:45 INFO  [PASS] Create FD modal opened
+2026-05-23 18:49:46 INFO  [PASS] Current account selected
+2026-05-23 18:49:46 INFO  [PASS] Deposit amount entered: 5000
+2026-05-23 18:49:46 INFO  [PASS] Tenure selected: 24 months (8.5% p.a.) - 2 years
+2026-05-23 18:49:46 INFO  [PASS] Create FD submitted successfully
+2026-05-23 18:49:46 INFO  Performing session action: logout
+2026-05-23 18:49:48 INFO  [PASS] User logged out successfully
+2026-05-23 18:49:48 INFO  Performing session action: login
+2026-05-23 18:49:51 INFO  [PASS] User logged in successfully
+2026-05-23 18:49:51 INFO  Navigating to page: fixed deposit
+2026-05-23 18:49:51 INFO  [PASS] Navigated to Fixed Deposit page successfully
+2026-05-23 18:49:51 INFO  Validating FD persistence after relogin: displayed
+2026-05-23 18:49:52 INFO  [PASS] FD persistence validated successfully
+2026-05-23 18:49:53 INFO  Browser Closed
+2026-05-23 18:49:55 INFO  Browser Started
+2026-05-23 18:49:55 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:49:59 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:49:59 INFO  Logging in with valid user credentials
+2026-05-23 18:50:06 INFO  [PASS] User logged in successfully
+2026-05-23 18:50:06 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:50:06 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:50:06 INFO  User clicks action: Create New FD
+2026-05-23 18:50:07 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:50:07 INFO  Entering decimal FD amount: 2500.75
+2026-05-23 18:50:08 INFO  [PASS] Decimal amount entered successfully
+2026-05-23 18:50:08 INFO  Validating decimal amount handling: accepted
+2026-05-23 18:50:09 INFO  Browser Closed
+2026-05-23 18:50:12 INFO  Browser Started
+2026-05-23 18:50:12 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:50:15 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:50:15 INFO  Logging in with valid user credentials
+2026-05-23 18:50:20 INFO  [PASS] User logged in successfully
+2026-05-23 18:50:20 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:50:20 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:50:20 INFO  User clicks action: Create New FD
+2026-05-23 18:50:21 INFO  [PASS] Create New FD button clicked
+2026-05-23 18:50:21 INFO  Selecting account type: current
+2026-05-23 18:50:21 INFO  [PASS] Current account selected successfully
+2026-05-23 18:50:21 INFO  Entering custom deposit amount: 3589
+2026-05-23 18:50:22 INFO  [PASS] Custom deposit amount entered successfully
+2026-05-23 18:50:22 INFO  Validating custom deposit amount handling: accepted
+2026-05-23 18:50:23 INFO  Browser Closed
+2026-05-23 18:50:25 INFO  Browser Started
+2026-05-23 18:50:25 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:50:28 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:50:28 INFO  Logging in with valid user credentials
+2026-05-23 18:50:34 INFO  [PASS] User logged in successfully
+2026-05-23 18:50:34 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:50:35 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:50:35 INFO  Opening FD details for FD status: Active
+2026-05-23 18:50:36 INFO  [PASS] Active FD details opened successfully
+2026-05-23 18:50:36 INFO  Validating Close FD option visibility: visible
+2026-05-23 18:50:51 INFO  Browser Closed
+2026-05-23 18:50:57 INFO  Browser Started
+2026-05-23 18:50:57 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:51:02 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:51:02 INFO  Logging in with valid user credentials
+2026-05-23 18:51:08 INFO  [PASS] User logged in successfully
+2026-05-23 18:51:08 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:51:08 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:51:09 INFO  Validating FD creation limit status: enforced
+2026-05-23 18:51:25 INFO  Browser Closed
+2026-05-23 18:51:25 INFO  Starting post-suite database cleanup
+2026-05-23 18:51:26 ERROR [FAIL] Database cleanup failed: FATAL: password authentication failed for user "postgres"
+2026-05-23 18:51:26 INFO  [PASS] Database cleanup completed
+2026-05-23 18:57:11 INFO  Browser Started
+2026-05-23 18:57:11 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:57:13 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:57:13 INFO  Logging in with valid user credentials
+2026-05-23 18:57:20 INFO  [PASS] User logged in successfully
+2026-05-23 18:57:20 INFO  Navigating to Fixed Deposit page
+2026-05-23 18:57:20 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 18:57:20 INFO  Creating multiple FDs
+2026-05-23 18:57:20 INFO  FD Count: 2
+2026-05-23 18:57:20 INFO  Account Type: any
+2026-05-23 18:57:20 INFO  Amount: 1000
+2026-05-23 18:57:20 INFO  Tenure: 12 months (7% p.a.) - 1 year
+2026-05-23 18:57:21 INFO  [PASS] Create FD modal opened
+2026-05-23 18:57:21 INFO  [PASS] Default linked account selected
+2026-05-23 18:57:22 INFO  [PASS] Deposit amount entered: 1000
+2026-05-23 18:57:22 INFO  [PASS] Tenure selected: 12 months (7% p.a.) - 1 year
+2026-05-23 18:57:22 INFO  [PASS] FD created successfully: 1
+2026-05-23 18:57:23 INFO  [PASS] Create FD modal opened
+2026-05-23 18:57:24 INFO  Browser Closed
+2026-05-23 18:57:28 INFO  Browser Started
+2026-05-23 18:57:28 INFO  Initializing WebDriver and launching banking application
+2026-05-23 18:57:31 INFO  [PASS] Banking application launched successfully
+2026-05-23 18:57:31 INFO  Logging in with valid user credentials
+2026-05-23 19:01:35 INFO  Browser Started
+2026-05-23 19:01:35 INFO  Initializing WebDriver and launching banking application
+2026-05-23 19:01:37 INFO  [PASS] Banking application launched successfully
+2026-05-23 19:01:37 INFO  Logging in with valid user credentials
+2026-05-23 19:01:44 INFO  [PASS] User logged in successfully
+2026-05-23 19:01:44 INFO  Navigating to Fixed Deposit page
+2026-05-23 19:01:44 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 19:01:44 INFO  Creating multiple FDs
+2026-05-23 19:01:44 INFO  FD Count: 2
+2026-05-23 19:01:44 INFO  Account Type: any
+2026-05-23 19:01:44 INFO  Amount: 1000
+2026-05-23 19:01:44 INFO  Tenure: 12 months (7% p.a.) - 1 year
+2026-05-23 19:01:45 INFO  [PASS] Create FD modal opened
+2026-05-23 19:01:45 INFO  [PASS] Default linked account selected
+2026-05-23 19:01:45 INFO  [PASS] Deposit amount entered: 1000
+2026-05-23 19:01:46 INFO  [PASS] Tenure selected: 12 months (7% p.a.) - 1 year
+2026-05-23 19:01:46 INFO  [PASS] FD created successfully: 1
+2026-05-23 19:01:47 INFO  [PASS] Create FD modal opened
+2026-05-23 19:01:48 INFO  [PASS] Default linked account selected
+2026-05-23 19:01:48 INFO  [PASS] Deposit amount entered: 1000
+2026-05-23 19:01:48 INFO  [PASS] Tenure selected: 12 months (7% p.a.) - 1 year
+2026-05-23 19:01:50 INFO  [PASS] FD created successfully: 2
+2026-05-23 19:01:50 INFO  Validating FD cards display status: displayed
+2026-05-23 19:01:50 INFO  [PASS] Multiple FD cards displayed successfully
+2026-05-23 19:01:52 INFO  Browser Closed
+2026-05-23 19:01:56 INFO  Browser Started
+2026-05-23 19:01:56 INFO  Initializing WebDriver and launching banking application
+2026-05-23 19:01:59 INFO  [PASS] Banking application launched successfully
+2026-05-23 19:01:59 INFO  Logging in with valid user credentials
+2026-05-23 19:02:07 INFO  [PASS] User logged in successfully
+2026-05-23 19:02:07 INFO  Navigating to Fixed Deposit page
+2026-05-23 19:02:07 INFO  [PASS] Successfully navigated to Fixed Deposit page
+2026-05-23 19:02:07 INFO  User clicks action: Create New FD
+2026-05-23 19:02:09 INFO  [PASS] Create New FD button clicked
+2026-05-23 19:02:09 INFO  Entering decimal FD amount: 2500.75
+2026-05-23 19:02:09 INFO  [PASS] Decimal amount entered successfully
+2026-05-23 19:02:09 INFO  Validating decimal amount handling: accepted
+2026-05-23 19:02:14 INFO  Browser Closed
+2026-05-23 19:02:14 INFO  Starting post-suite database cleanup
+2026-05-23 19:02:14 ERROR [FAIL] Database cleanup failed: FATAL: password authentication failed for user "postgres"
+2026-05-23 19:02:14 INFO  [PASS] Database cleanup completed

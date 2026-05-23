@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Banking Automation Suite" parallel="false">
+    <test name="UI Test Execution">
+        <classes>
+            <class name="runners.UI.AccountTestRunner"/>
+            <class name="runners.UI.ProfileRunner"/>
+            <class name="runners.UI.AuthRunner"/>
+            <class name="runners.UI.FDRunner"/>
+            <class name="runners.UI.TransactionRunner"/>
+            <class name="runners.UI.LoanRunner"/>
+            <class name="runners.API.APIAuth"/>
+            <class name="runners.API.APILoan"/>
+            <class name="runners.API.APIProfile"/>
+            <class name="runners.API.APITransaction"/>
+            <class name="runners.API.APIFd"/>
+            <class name="runners.API.AccountsRunner"/>
+        </classes>
+    </test>
+
+</suite>
