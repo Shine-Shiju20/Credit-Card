@@ -41,5 +41,6 @@ build/
 .junie
 *.md
 *.txt
+
 # Extent Reports
 ExtentReports/
