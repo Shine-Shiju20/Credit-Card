@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/java/resources/features/creditcardAPI",
+        features = {"src/test/java/resources/features/creditcardUI", "src/test/java/resources/features/creditcardAPI"},
         glue = {"stepdefinitions", "Hooks"},
         plugin = {
                 "pretty",
@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
                 "junit:target/cucumber-reports/cucumber.xml",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
         },
-        tags = "@CreditCardAPI",
+        tags = "@CreditCardUI or @CreditCardAPI",
         monochrome = true,
         publish = false
 )

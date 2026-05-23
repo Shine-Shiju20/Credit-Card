@@ -1,0 +1,4582 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 23, 2026 06:16:43 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@CC_TC_053</a><a class="dropdown-item" href="#">@CC_TC_018</a><a class="dropdown-item" href="#">@CC_TC_005</a><a class="dropdown-item" href="#">@CC_TC_001</a><a class="dropdown-item" href="#">@CreditCardUI</a><a class="dropdown-item" href="#">@CC_TC_017</a><a class="dropdown-item" href="#">@CC_TC_086</a><a class="dropdown-item" href="#">@CC_TC_076</a><a class="dropdown-item" href="#">@CC_TC_011</a><a class="dropdown-item" href="#">@CC_TC_019</a><a class="dropdown-item" href="#">@CC_TC_087</a><a class="dropdown-item" href="#">@CC_TC_015</a><a class="dropdown-item" href="#">@CC_TC_071</a><a class="dropdown-item" href="#">@CC_TC_009</a><a class="dropdown-item" href="#">@CC_TC_007</a><a class="dropdown-item" href="#">@CC_TC_106</a><a class="dropdown-item" href="#">@CC_TC_054</a><a class="dropdown-item" href="#">@CC_TC_008</a><a class="dropdown-item" href="#">@CC_TC_010</a><a class="dropdown-item" href="#">@CC_TC_012</a><a class="dropdown-item" href="#">@CC_TC_072</a><a class="dropdown-item" href="#">@CC_TC_016</a><a class="dropdown-item" href="#">@CC_TC_105</a><a class="dropdown-item" href="#">@CC_TC_020</a><a class="dropdown-item" href="#">@CC_TC_060</a><a class="dropdown-item" href="#">@CC_TC_003</a><a class="dropdown-item" href="#">@CC_TC_077</a><a class="dropdown-item" href="#">@CC_TC_078</a><a class="dropdown-item" href="#">@CC_TC_058</a><a class="dropdown-item" href="#">@CC_TC_013</a><a class="dropdown-item" href="#">@CC_TC_059</a><a class="dropdown-item" href="#">@CC_TC_085</a><a class="dropdown-item" href="#">@CC_TC_006</a><a class="dropdown-item" href="#">@CC_TC_014</a><a class="dropdown-item" href="#">@CC_TC_002</a><a class="dropdown-item" href="#">@CC_TC_004</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit Card Application UI</p>
+            <p class="text-sm">
+              <span>6:16:45 PM</span> / <span>00:06:41:738</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Credit Card Application UI</h5>
+<span class='badge badge-success'>05.23.2026 6:16:45 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:23:27 PM</span>
+<span class='badge badge-default'>00:06:41:738</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify user can open new credit card application form</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_application_modal_should_open_successfully()">
+                <span>Then Credit Card Application modal should open successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Verify linked bank accounts are displayed in dropdown</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.linked_bank_accounts_should_be_displayed_in_dropdown()">
+                <span>Then Linked bank accounts should be displayed in dropdown</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Verify only ACTIVE accounts are shown in linked account dropdown</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.only_active_linked_accounts_should_be_displayed()">
+                <span>Then Only active linked accounts should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Verify card type dropdown displays available card types</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="30"><span class="badge log pass-bg mr-2">Pass</span>Verify card type dropdown displays available card types</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launches the application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on card tier dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see card type "Entry (Classic)" in dropdown</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>Verify card type dropdown displays available card types</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launches the application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on card tier dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see card type "Premium (Privilege)" in dropdown</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>Verify Entry card can be selected successfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_selects_card_type(java.lang.String)">
+                <span>And User selects "Entry (Classic)" card type</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.selected_card_type_should_be(java.lang.String)">
+                <span>Then Selected card type should be "Entry (Classic)"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>Verify Premium card can be selected successfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_selects_card_type(java.lang.String)">
+                <span>And User selects "Premium (Privilege)" card type</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.selected_card_type_should_be(java.lang.String)">
+                <span>Then Selected card type should be "Premium (Privilege)"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>Verify requested credit limit field accepts valid numeric value</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "25000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_limit_should_be_accepted()">
+                <span>Then Requested limit should be accepted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="80"><span class="badge log pass-bg mr-2">Pass</span>Verify requested credit limit field rejects alphabets</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "abc"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_limit_field_should_remain_empty()">
+                <span>Then Requested limit field should remain empty</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="90"><span class="badge log pass-bg mr-2">Pass</span>Verify requested credit limit field rejects special characters</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "@@@"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_limit_field_should_remain_empty()">
+                <span>Then Requested limit field should remain empty</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Verify requested credit limit field rejects negative values</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "-88776"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_submit_application_button()">
+                <span>And User clicks Submit Application button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_credit_limit_validation_message_should_be_displayed(java.lang.String)">
+                <span>Then Requested credit limit validation message "Requested limit must be a positive number" should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>Verify requested credit limit field rejects zero value</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "0"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_submit_application_button()">
+                <span>And User clicks Submit Application button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_credit_limit_validation_message_should_be_displayed(java.lang.String)">
+                <span>Then Requested credit limit validation message "Requested limit must be a positive number" should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="126"><span class="badge log fail-bg mr-2">Fail</span>Verify requested limit below 10000 is rejected</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "5000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_credit_limit_validation_message_should_be_displayed(java.lang.String)">
+                <span>Then Requested credit limit validation message "Requested limit must be at least 10000" should be displayed</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(normalize-space(.),'Requested limit must be at least 10000')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SHINE~1.SHI\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53970}, goog:processID: 20252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53970/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efda13789e02568c9c01765d522c1489
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.CreditCardPage.verifyRequestedCreditLimitValidationMessage(CreditCardPage.java:261)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_credit_limit_validation_message_should_be_displayed(CreditCard_UI_Steps.java:324)
+	at ✽.Requested credit limit validation message "Requested limit must be at least 10000" should be displayed(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Application_UI.feature:88)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="136"><span class="badge log pass-bg mr-2">Pass</span>Verify requested limit exactly 10,000 is accepted</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "10000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_limit_should_be_accepted()">
+                <span>Then Requested limit should be accepted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="146"><span class="badge log pass-bg mr-2">Pass</span>Verify extremely high requested limit is validated properly</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "999999999"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.maximum_eligible_limit_validation_message_should_be_displayed()">
+                <span>Then Maximum eligible limit validation message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Verify empty requested limit field validation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_leaves_requested_limit_field_empty()">
+                <span>And User leaves requested limit field empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.empty_requested_limit_validation_message_should_appear()">
+                <span>Then Empty requested limit validation message should appear</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="168"><span class="badge log pass-bg mr-2">Pass</span>Verify decimal limit values are handled correctly</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "25000.50"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.requested_limit_should_be_accepted()">
+                <span>Then Requested limit should be accepted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="178"><span class="badge log pass-bg mr-2">Pass</span>Verify Continue button works after valid inputs</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_selects_card_type(java.lang.String)">
+                <span>And User selects "Entry (Classic)" card type</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "25000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_selects_valid_source_account()">
+                <span>And User selects valid source account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.eligibility_check_step_should_be_displayed()">
+                <span>Then Eligibility Check step should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="191"><span class="badge log fail-bg mr-2">Fail</span>Verify Continue button is disabled for invalid inputs</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "a@c"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.continue_button_should_be_disabled()">
+                <span>Then Continue button should be disabled</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at pages.CreditCardPage.verifyContinueButtonDisabled(CreditCardPage.java:176)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.continue_button_should_be_disabled(CreditCard_UI_Steps.java:348)
+	at ✽.Continue button should be disabled(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Application_UI.feature:129)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="201"><span class="badge log pass-bg mr-2">Pass</span>Verify Cancel button closes application modal</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_cancel_button()">
+                <span>And User clicks Cancel button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.apply_credit_card_modal_should_close()">
+                <span>Then Apply Credit Card modal should close</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="211"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit Card Close And Renewal UI</p>
+            <p class="text-sm">
+              <span>6:23:27 PM</span> / <span>00:02:19:610</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Credit Card Close And Renewal UI</h5>
+<span class='badge badge-success'>05.23.2026 6:23:27 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:25:46 PM</span>
+<span class='badge badge-default'>00:02:19:610</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=211</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="212"><span class="badge log fail-bg mr-2">Fail</span>Verify UI close confirm modal closes zero-balance card</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_flips_the_credit_card()">
+                <span>When User flips the credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_close_card_button()">
+                <span>And User clicks Close Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.close_card_confirmation_modal_should_be_displayed()">
+                <span>Then Close Card confirmation modal should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_confirms_card_closure()">
+                <span>When User confirms card closure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_should_be_closed_successfully()">
+                <span>Then Credit card should be closed successfully</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Your credit card has been permanently closed')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SHINE~1.SHI\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62543}, goog:processID: 21224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62543/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 555e6ba6540d82c573b35b0ce3fe90bb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_should_be_closed_successfully(CreditCard_UI_Steps.java:593)
+	at ✽.Credit card should be closed successfully(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Close_And_Renewal_UI.feature:15)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="224"><span class="badge log pass-bg mr-2">Pass</span>Verify UI shows outstanding balance warning before closing</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_flips_a_card_with_outstanding_balance()">
+                <span>When User flips a card with outstanding balance</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_close_card_button()">
+                <span>And User clicks Close Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.outstanding_balance_warning_should_be_displayed()">
+                <span>Then Outstanding balance warning should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="234"><span class="badge log fail-bg mr-2">Fail</span>Verify closed card does not show Close Card button in UI</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_flips_the_credit_card()">
+                <span>When User flips the credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_close_card_button()">
+                <span>And User clicks Close Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.close_card_confirmation_modal_should_be_displayed()">
+                <span>Then Close Card confirmation modal should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_confirms_card_closure()">
+                <span>When User confirms card closure</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_should_be_closed_successfully()">
+                <span>Then Credit card should be closed successfully</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Your credit card has been permanently closed')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SHINE~1.SHI\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60471}, goog:processID: 17880, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60471/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14a27b42eda7ca18c86754c4adcd1c9f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_should_be_closed_successfully(CreditCard_UI_Steps.java:593)
+	at ✽.Credit card should be closed successfully(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Close_And_Renewal_UI.feature:29)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_scrolls_to_bottom_of_credit_cards_page()">
+                <span>When User scrolls to bottom of Credit Cards page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.delete_card_button_should_be_visible()">
+                <span>Then Delete Card button should be visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.close_card_button_should_not_be_visible()">
+                <span>And Close Card button should not be visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="249"><span class="badge log pass-bg mr-2">Pass</span>Verify card renewal creates new card and deactivates old card in UI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_opens_expired_credit_card_details()">
+                <span>When User opens expired credit card details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_renew_card_button()">
+                <span>And User clicks Renew Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.new_renewed_card_should_be_displayed()">
+                <span>Then New renewed card should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.old_card_should_be_shown_as_deactivated()">
+                <span>And Old card should be shown as deactivated</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="260"><span class="badge log fail-bg mr-2">Fail</span>Verify renewal on non-expired card is too early in UI</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_opens_non_expired_credit_card_details()">
+                <span>When User opens non expired credit card details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_renew_card_button()">
+                <span>And User clicks Renew Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.renewal_too_early_validation_message_should_be_displayed()">
+                <span>Then Renewal too early validation message should be displayed</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Please enter a requested credit limit')]"}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a85eebee97ca5e7794d001c63bcac9c, findElement {using=xpath, value=//*[contains(text(),'Please enter a requested credit limit')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SHINE~1.SHI\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55946}, goog:processID: 32036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55946/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a85eebee97ca5e7794d001c63bcac9c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
+	at pages.CreditCardPage.verifyValidationMessageDisplayed(CreditCardPage.java:172)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.renewal_too_early_validation_message_should_be_displayed(CreditCard_UI_Steps.java:698)
+	at ✽.Renewal too early validation message should be displayed(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Close_And_Renewal_UI.feature:46)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="270"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit Card Delete UI</p>
+            <p class="text-sm">
+              <span>6:25:46 PM</span> / <span>00:00:37:804</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Credit Card Delete UI</h5>
+<span class='badge badge-success'>05.23.2026 6:25:46 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:26:24 PM</span>
+<span class='badge badge-default'>00:00:37:804</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=270</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="271"><span class="badge log pass-bg mr-2">Pass</span>Verify Delete Card button appears only for closed card in UI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_flips_the_credit_card()">
+                <span>When User flips the credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_closes_the_credit_card_successfully()">
+                <span>And User closes the credit card successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.delete_card_button_should_be_visible()">
+                <span>Then Delete Card button should be visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="281"><span class="badge log pass-bg mr-2">Pass</span>Verify unauthenticated UI user cannot access delete flow</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_directly_to_delete_card_flow_without_login()">
+                <span>When User navigates directly to delete card flow without login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_should_be_redirected_to_login_page()">
+                <span>Then User should be redirected to login page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="291"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit Card Application UI</p>
+            <p class="text-sm">
+              <span>6:26:24 PM</span> / <span>00:00:19:475</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Credit Card Application UI</h5>
+<span class='badge badge-success'>05.23.2026 6:26:24 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:26:44 PM</span>
+<span class='badge badge-default'>00:00:19:475</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=291</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="292"><span class="badge log pass-bg mr-2">Pass</span>Verify application fails when no linked account is selected</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "attacker@inboxorigin.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_on_apply_credit_card_button()">
+                <span>When User clicks on Apply Credit Card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_enters_requested_limit(java.lang.String)">
+                <span>And User enters requested limit "500"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_clicks_continue_button()">
+                <span>And User clicks Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.profile_or_account_data_missing_reason_should_be_displayed()">
+                <span>Then Profile or account data missing reason should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="303"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Multiple Credit Card Management UI</p>
+            <p class="text-sm">
+              <span>6:26:44 PM</span> / <span>00:00:33:592</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Multiple Credit Card Management UI</h5>
+<span class='badge badge-success'>05.23.2026 6:26:44 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:27:17 PM</span>
+<span class='badge badge-default'>00:00:33:592</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=303</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="304"><span class="badge log pass-bg mr-2">Pass</span>Verify UI displays multiple cards and sorts active, blocked, closed</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.multiple_credit_cards_should_be_displayed()">
+                <span>Then Multiple credit cards should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.cards_should_be_sorted_by_status_active_blocked_closed()">
+                <span>And Cards should be sorted by status active blocked closed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="313"><span class="badge log pass-bg mr-2">Pass</span>Verify UI card flip shows management actions per status</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_flips_the_credit_card()">
+                <span>When User flips the credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.card_management_actions_should_be_displayed_based_on_card_status()">
+                <span>Then Card management actions should be displayed based on card status</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="322"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit Card Statement UI</p>
+            <p class="text-sm">
+              <span>6:27:17 PM</span> / <span>00:00:51:551</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Credit Card Statement UI</h5>
+<span class='badge badge-success'>05.23.2026 6:27:17 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:28:09 PM</span>
+<span class='badge badge-default'>00:00:51:551</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=322</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="323"><span class="badge log fail-bg mr-2">Fail</span>Verify UI opens CreditCardStatementModal for a valid card</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_opens_credit_card_statement_section()">
+                <span>When User opens credit card statement section</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="cc-btn cc-btn-secondary">...</button> is not clickable at point (655, 304). Other element would receive the click: <div class="cc-card-front">...</div>
+  (Session info: chrome=148.0.7778.179)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [443e982faa3c141df45d21469f0ff9bf, clickElement {id=f.3EAC43219EC714D4716149EC1788349A.d.5B5333E2451B29B79D0E0A73C235061F.e.108}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SHINE~1.SHI\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60647}, goog:processID: 33624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60647/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (443e982faa3c141df45d21469f0ff9bf)] -> xpath: //button[contains(.,'Statement') or contains(.,'View Statement')]]
+Session ID: 443e982faa3c141df45d21469f0ff9bf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_opens_credit_card_statement_section(CreditCard_UI_Steps.java:466)
+	at ✽.User opens credit card statement section(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Statement_UI.feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_statement_should_be_displayed_successfully()">
+                <span>Then Credit card statement should be displayed successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="332"><span class="badge log fail-bg mr-2">Fail</span>Verify UI transaction type filter shows PURCHASE records</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_opens_credit_card_statement_section()">
+                <span>When User opens credit card statement section</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="cc-btn cc-btn-secondary">...</button> is not clickable at point (655, 304). Other element would receive the click: <div class="cc-card-front">...</div>
+  (Session info: chrome=148.0.7778.179)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27309c88f8c70627958eeb67121be3fa, clickElement {id=f.A06D3DAB2147F02662CD132A95E8865D.d.2907C0962EBDF8EEDB18A27DB6785D37.e.107}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SHINE~1.SHI\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55473}, goog:processID: 9832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55473/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (27309c88f8c70627958eeb67121be3fa)] -> xpath: //button[contains(.,'Statement') or contains(.,'View Statement')]]
+Session ID: 27309c88f8c70627958eeb67121be3fa
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_opens_credit_card_statement_section(CreditCard_UI_Steps.java:466)
+	at ✽.User opens credit card statement section(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Statement_UI.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_filters_statement_by_transaction_type(java.lang.String)">
+                <span>And User filters statement by transaction type "PURCHASE"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.statement_should_display_only_purchase_records()">
+                <span>Then Statement should display only PURCHASE records</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="342"><span class="badge log pass-bg mr-2">Pass</span>Verify unauthenticated user cannot open statement UI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_directly_to_statement_page_without_login()">
+                <span>When User navigates directly to statement page without login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_should_be_redirected_to_login_page()">
+                <span>Then User should be redirected to login page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="352"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Credit Card Application UI</p>
+            <p class="text-sm">
+              <span>6:28:09 PM</span> / <span>00:01:50:719</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Credit Card Application UI</h5>
+<span class='badge badge-success'>05.23.2026 6:28:09 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:30:00 PM</span>
+<span class='badge badge-default'>00:01:50:719</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=352</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="353"><span class="badge log pass-bg mr-2">Pass</span>Verify successful card transaction</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_selects_an_active_credit_card()">
+                <span>When User selects an active credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_performs_purchase_transaction_with_amount(java.lang.String)">
+                <span>And User performs purchase transaction with amount "1000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_transaction_should_be_processed_successfully()">
+                <span>Then Credit card transaction should be processed successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="363"><span class="badge log pass-bg mr-2">Pass</span>Verify insufficient limit validation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_selects_a_credit_card_with_low_available_limit()">
+                <span>When User selects a credit card with low available limit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_performs_purchase_transaction_with_amount(java.lang.String)">
+                <span>And User performs purchase transaction with amount "50000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.insufficient_available_limit_validation_message_should_be_displayed()">
+                <span>Then Insufficient available limit validation message should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.transaction_should_be_declined()">
+                <span>And Transaction should be declined</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="374"><span class="badge log fail-bg mr-2">Fail</span>Verify inactive card validation</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_scrolls_to_bottom_of_credit_cards_page()">
+                <span>When User scrolls to bottom of Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_selects_an_inactive_credit_card()">
+                <span>And User selects an inactive credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_performs_purchase_transaction_with_amount(java.lang.String)">
+                <span>And User performs purchase transaction with amount "500"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.inactive_card_validation_message_should_be_displayed()">
+                <span>Then Inactive card validation message should be displayed</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Cannot process transaction') or contains(.,'Card is not active')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SHINE~1.SHI\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62665}, goog:processID: 27740, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62665/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 825396ddd0548d7132b8f70a9b28fde2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.CreditCardPage.verifyInactiveCardValidationMessage(CreditCardPage.java:477)
+	at stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.inactive_card_validation_message_should_be_displayed(CreditCard_UI_Steps.java:761)
+	at ✽.Inactive card validation message should be displayed(file:///C:/Users/shine.shiju/Downloads/Credit-Card-CreditCardAPI_Testing/src/test/java/resources/features/creditcardUI/Credit_Card_Transaction_Validation.feature:31)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.transaction_should_not_be_processed()">
+                <span>And Transaction should not be processed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="386"><span class="badge log pass-bg mr-2">Pass</span>Verify available limit updates after transaction</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_credit_cards_page()">
+                <span>And User navigates to Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_completes_a_successful_purchase_transaction()">
+                <span>When User completes a successful purchase transaction</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_refreshes_the_credit_cards_page()">
+                <span>And User refreshes the Credit Cards page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.available_credit_limit_should_be_updated_correctly()">
+                <span>Then Available credit limit should be updated correctly</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="396"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Payment Tracking UI</p>
+            <p class="text-sm">
+              <span>6:30:00 PM</span> / <span>00:00:53:009</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Payment Tracking UI</h5>
+<span class='badge badge-success'>05.23.2026 6:30:00 PM</span>
+<span class='badge badge-danger'>05.23.2026 6:30:53 PM</span>
+<span class='badge badge-default'>00:00:53:009</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=396</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="397"><span class="badge log pass-bg mr-2">Pass</span>Verify UI PaymentTrackingPage lists credit card purchase records</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_payment_tracking_page()">
+                <span>When User navigates to Payment Tracking page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.credit_card_purchase_records_should_be_displayed()">
+                <span>Then Credit card purchase records should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="405"><span class="badge log pass-bg mr-2">Pass</span>Verify UI analytics cards show payment tracking totals</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_to_payment_tracking_page()">
+                <span>When User navigates to Payment Tracking page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.payment_tracking_analytics_cards_should_show_credit_card_totals()">
+                <span>Then Payment tracking analytics cards should show credit card totals</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="413"><span class="badge log pass-bg mr-2">Pass</span>Verify unauthenticated user cannot access payment tracking UI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_logs_into_the_banking_application_using_and(java.lang.String,java.lang.String)">
+                <span>And User logs into the banking application using "yilap59703@deapad.com" and "Kuttichatan@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_launches_the_application()">
+                <span>Given User launches the application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_navigates_directly_to_payment_tracking_page_without_login()">
+                <span>When User navigates directly to Payment Tracking page without login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ui.CreditCardUI.CreditCard_UI_Steps.user_should_be_redirected_to_login_page()">
+                <span>Then User should be redirected to login page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='329'>When User opens credit card statement section</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify UI opens CreditCardStatementModal for a valid card.When User opens credit card statement section</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='338'>When User opens credit card statement section</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify UI transaction type filter shows PURCHASE records.When User opens credit card statement section</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='199'>Then Continue button should be disabled</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Continue button is disabled for invalid inputs.Then Continue button should be disabled</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:25:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='268'>Then Renewal too early validation message should be displayed</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify renewal on non-expired card is too early in UI.Then Renewal too early validation message should be displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:20:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='134'>Then Requested credit limit validation message "Requested limit must be at least 10000" should be displayed</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested limit below 10000 is rejected.Then Requested credit limit validation message "Requested limit must be at least 10000" should be displayed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='222'>Then Credit card should be closed successfully</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify UI close confirm modal closes zero-balance card.Then Credit card should be closed successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:24:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='244'>Then Credit card should be closed successfully</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify closed card does not show Close Card button in UI.Then Credit card should be closed successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:29:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='383'>Then Inactive card validation message should be displayed</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify inactive card validation.Then Inactive card validation message should be displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">36</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_053</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_053</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:25:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='270' id='271'>Verify Delete Card button appears only for closed card in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Delete UI.Verify Delete Card button appears only for closed card in UI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_018</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_018</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:22:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='178'>Verify Continue button works after valid inputs</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Continue button works after valid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@CC_TC_005</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_005</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Verify card type dropdown displays available card types</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify card type dropdown displays available card types</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:18:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Verify card type dropdown displays available card types</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify card type dropdown displays available card types</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:16:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify user can open new credit card application form</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify user can open new credit card application form</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>32</span>
+<span class='badge log badge-danger'>8</span>
+</span>
+<p class="name">@CreditCardUI</p>
+<p class="duration text-sm">40 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CreditCardUI</h4>
+<span status="pass" class='badge log pass-bg'>32 passed</span>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:16:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify user can open new credit card application form</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify user can open new credit card application form</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Verify linked bank accounts are displayed in dropdown</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify linked bank accounts are displayed in dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Verify only ACTIVE accounts are shown in linked account dropdown</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify only ACTIVE accounts are shown in linked account dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Verify card type dropdown displays available card types</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify card type dropdown displays available card types</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:18:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='40'>Verify card type dropdown displays available card types</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify card type dropdown displays available card types</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:18:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Verify Entry card can be selected successfully</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Entry card can be selected successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:18:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='60'>Verify Premium card can be selected successfully</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Premium card can be selected successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='70'>Verify requested credit limit field accepts valid numeric value</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field accepts valid numeric value</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Verify requested credit limit field rejects alphabets</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects alphabets</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='90'>Verify requested credit limit field rejects special characters</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects special characters</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>Verify requested credit limit field rejects negative values</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects negative values</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:20:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='113'>Verify requested credit limit field rejects zero value</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects zero value</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:20:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>Verify requested limit below 10000 is rejected</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested limit below 10000 is rejected</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:21:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='136'>Verify requested limit exactly 10,000 is accepted</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested limit exactly 10,000 is accepted</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:21:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='146'>Verify extremely high requested limit is validated properly</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify extremely high requested limit is validated properly</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:21:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='157'>Verify empty requested limit field validation</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify empty requested limit field validation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:22:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='168'>Verify decimal limit values are handled correctly</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify decimal limit values are handled correctly</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:22:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='178'>Verify Continue button works after valid inputs</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Continue button works after valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:22:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>Verify Continue button is disabled for invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Continue button is disabled for invalid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:23:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='201'>Verify Cancel button closes application modal</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Cancel button closes application modal</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='212'>Verify UI close confirm modal closes zero-balance card</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify UI close confirm modal closes zero-balance card</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:24:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='224'>Verify UI shows outstanding balance warning before closing</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify UI shows outstanding balance warning before closing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:24:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='234'>Verify closed card does not show Close Card button in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify closed card does not show Close Card button in UI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:24:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='249'>Verify card renewal creates new card and deactivates old card in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify card renewal creates new card and deactivates old card in UI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:25:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='260'>Verify renewal on non-expired card is too early in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify renewal on non-expired card is too early in UI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:25:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='270' id='271'>Verify Delete Card button appears only for closed card in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Delete UI.Verify Delete Card button appears only for closed card in UI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='270' id='281'>Verify unauthenticated UI user cannot access delete flow</a>
+<div class="">
+<span class="badge badge-default">Credit Card Delete UI.Verify unauthenticated UI user cannot access delete flow</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='291' id='292'>Verify application fails when no linked account is selected</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify application fails when no linked account is selected</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='303' id='304'>Verify UI displays multiple cards and sorts active, blocked, closed</a>
+<div class="">
+<span class="badge badge-default">Multiple Credit Card Management UI.Verify UI displays multiple cards and sorts active, blocked, closed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:27:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='303' id='313'>Verify UI card flip shows management actions per status</a>
+<div class="">
+<span class="badge badge-default">Multiple Credit Card Management UI.Verify UI card flip shows management actions per status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='323'>Verify UI opens CreditCardStatementModal for a valid card</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify UI opens CreditCardStatementModal for a valid card</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='332'>Verify UI transaction type filter shows PURCHASE records</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify UI transaction type filter shows PURCHASE records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:27:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='342'>Verify unauthenticated user cannot open statement UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify unauthenticated user cannot open statement UI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:28:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='353'>Verify successful card transaction</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify successful card transaction</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:28:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='363'>Verify insufficient limit validation</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify insufficient limit validation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='374'>Verify inactive card validation</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify inactive card validation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:29:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='386'>Verify available limit updates after transaction</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify available limit updates after transaction</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:30:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='396' id='397'>Verify UI PaymentTrackingPage lists credit card purchase records</a>
+<div class="">
+<span class="badge badge-default">Payment Tracking UI.Verify UI PaymentTrackingPage lists credit card purchase records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:30:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='396' id='405'>Verify UI analytics cards show payment tracking totals</a>
+<div class="">
+<span class="badge badge-default">Payment Tracking UI.Verify UI analytics cards show payment tracking totals</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:30:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='396' id='413'>Verify unauthenticated user cannot access payment tracking UI</a>
+<div class="">
+<span class="badge badge-default">Payment Tracking UI.Verify unauthenticated user cannot access payment tracking UI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_017</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_017</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:22:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='168'>Verify decimal limit values are handled correctly</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify decimal limit values are handled correctly</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_086</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_086</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:24:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='224'>Verify UI shows outstanding balance warning before closing</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify UI shows outstanding balance warning before closing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_076</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_076</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:30:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='396' id='397'>Verify UI PaymentTrackingPage lists credit card purchase records</a>
+<div class="">
+<span class="badge badge-default">Payment Tracking UI.Verify UI PaymentTrackingPage lists credit card purchase records</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_011</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_011</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>Verify requested credit limit field rejects negative values</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects negative values</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_019</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_019</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:22:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>Verify Continue button is disabled for invalid inputs</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Continue button is disabled for invalid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_087</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_087</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:24:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='234'>Verify closed card does not show Close Card button in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify closed card does not show Close Card button in UI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_015</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_015</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:21:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='146'>Verify extremely high requested limit is validated properly</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify extremely high requested limit is validated properly</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_071</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_071</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='303' id='304'>Verify UI displays multiple cards and sorts active, blocked, closed</a>
+<div class="">
+<span class="badge badge-default">Multiple Credit Card Management UI.Verify UI displays multiple cards and sorts active, blocked, closed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@CC_TC_009</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_009</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>Verify requested credit limit field rejects alphabets</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects alphabets</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:29:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='386'>Verify available limit updates after transaction</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify available limit updates after transaction</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@CC_TC_007</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_007</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:18:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='60'>Verify Premium card can be selected successfully</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Premium card can be selected successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:28:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='363'>Verify insufficient limit validation</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify insufficient limit validation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_106</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_106</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:25:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='260'>Verify renewal on non-expired card is too early in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify renewal on non-expired card is too early in UI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_054</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_054</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='270' id='281'>Verify unauthenticated UI user cannot access delete flow</a>
+<div class="">
+<span class="badge badge-default">Credit Card Delete UI.Verify unauthenticated UI user cannot access delete flow</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_008</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_008</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='70'>Verify requested credit limit field accepts valid numeric value</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field accepts valid numeric value</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='374'>Verify inactive card validation</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify inactive card validation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_010</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_010</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:19:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='90'>Verify requested credit limit field rejects special characters</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects special characters</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_012</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_012</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:20:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='113'>Verify requested credit limit field rejects zero value</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested credit limit field rejects zero value</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_072</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_072</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:27:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='303' id='313'>Verify UI card flip shows management actions per status</a>
+<div class="">
+<span class="badge badge-default">Multiple Credit Card Management UI.Verify UI card flip shows management actions per status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_016</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_016</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:21:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='157'>Verify empty requested limit field validation</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify empty requested limit field validation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_105</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_105</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:24:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='249'>Verify card renewal creates new card and deactivates old card in UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify card renewal creates new card and deactivates old card in UI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_020</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_020</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:23:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='201'>Verify Cancel button closes application modal</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Cancel button closes application modal</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_060</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_060</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:27:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='342'>Verify unauthenticated user cannot open statement UI</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify unauthenticated user cannot open statement UI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_003</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Verify only ACTIVE accounts are shown in linked account dropdown</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify only ACTIVE accounts are shown in linked account dropdown</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_077</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_077</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:30:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='396' id='405'>Verify UI analytics cards show payment tracking totals</a>
+<div class="">
+<span class="badge badge-default">Payment Tracking UI.Verify UI analytics cards show payment tracking totals</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_078</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_078</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:30:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='396' id='413'>Verify unauthenticated user cannot access payment tracking UI</a>
+<div class="">
+<span class="badge badge-default">Payment Tracking UI.Verify unauthenticated user cannot access payment tracking UI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_058</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_058</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='323'>Verify UI opens CreditCardStatementModal for a valid card</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify UI opens CreditCardStatementModal for a valid card</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_013</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_013</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:20:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>Verify requested limit below 10000 is rejected</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested limit below 10000 is rejected</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_059</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_059</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='322' id='332'>Verify UI transaction type filter shows PURCHASE records</a>
+<div class="">
+<span class="badge badge-default">Credit Card Statement UI.Verify UI transaction type filter shows PURCHASE records</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CC_TC_085</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_085</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='211' id='212'>Verify UI close confirm modal closes zero-balance card</a>
+<div class="">
+<span class="badge badge-default">Credit Card Close And Renewal UI.Verify UI close confirm modal closes zero-balance card</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@CC_TC_006</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_006</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:18:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Verify Entry card can be selected successfully</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify Entry card can be selected successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:28:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='352' id='353'>Verify successful card transaction</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify successful card transaction</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_014</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_014</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:21:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='136'>Verify requested limit exactly 10,000 is accepted</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify requested limit exactly 10,000 is accepted</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_002</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Verify linked bank accounts are displayed in dropdown</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify linked bank accounts are displayed in dropdown</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CC_TC_004</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CC_TC_004</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='291' id='292'>Verify application fails when no linked account is selected</a>
+<div class="">
+<span class="badge badge-default">Credit Card Application UI.Verify application fails when no linked account is selected</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 23, 2026 06:16:43 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 23, 2026 06:30:53 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'><b>32</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='20%'><b>8</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>237</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>8</b> steps failed,
+<b>7</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Credit Card Application UI":401.738,"Credit Card Close And Renewal UI":139.61,"Credit Card Delete UI":37.804,"Credit Card Application UI":19.475,"Multiple Credit Card Management UI":33.592,"Credit Card Statement UI":51.551,"Credit Card Application UI":110.719,"Payment Tracking UI":53.009
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@CC_TC_053</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_018</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_005</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CreditCardUI</td>
+<td>32</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>@CC_TC_017</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_086</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_076</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_011</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_019</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CC_TC_087</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CC_TC_015</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_071</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_009</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_007</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_106</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CC_TC_054</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_008</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@CC_TC_010</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_012</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_072</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_016</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_105</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_020</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_060</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_003</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_077</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_078</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_058</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CC_TC_013</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CC_TC_059</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CC_TC_085</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CC_TC_006</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_014</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_002</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CC_TC_004</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 32,
+failChild: 8,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 237,
+failGrandChild: 8,
+warningGrandChild: 0,
+skipGrandChild: 7,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

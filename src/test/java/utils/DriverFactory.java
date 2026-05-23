@@ -1,43 +1,58 @@
 package utils;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.apache.logging.log4j.Logger;
 
 public class DriverFactory {
-    private static final Logger logger = LoggerUtility.getLogger(DriverFactory.class);
-    WebDriver Driver;
 
-    //Constructor (creates an Object of WebDriver)
-    public DriverFactory(){
-        this.Driver = new ChromeDriver();
+    private static final Logger logger =
+            LoggerUtility.getLogger(DriverFactory.class);
+
+    private WebDriver driver;
+
+    // Constructor
+    public DriverFactory() {
+
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--remote-allow-origins=*");
+
+        options.addArguments("--start-maximized");
+
+        driver = new ChromeDriver(options);
+
+        logger.info("Chrome Driver Initialized");
     }
 
-    //Navigates to an URL provided by the user
-    public void FetchPage(String url){
-        if(this.Driver == null){
-            logger.warn("Driver Not initialised");
-        }else {
-            this.Driver.get(url);
+    // Navigate to URL
+    public void FetchPage(String url) {
+
+        if (driver == null) {
+            logger.warn("Driver Not Initialised");
+        } else {
+            driver.get(url);
         }
     }
 
-    public void CloseDriver(){
-        if(this.Driver == null){
-            logger.warn("Driver Not initialised");
-        }else {
-            this.Driver.close();
+    // Close Browser
+    public void CloseDriver() {
+
+        if (driver == null) {
+            logger.warn("Driver Not Initialised");
+        } else {
+            driver.quit();
         }
     }
 
-    //getter (returns the Created WebDriver)
-    public WebDriver getDriver(){
-        return this.Driver;
+    // Getter
+    public WebDriver getDriver() {
+        return driver;
     }
 
-    //Setter (sets the Driver)
-    public void SetDriver(WebDriver Driver){
-        this.Driver = Driver;
+    // Setter
+    public void SetDriver(WebDriver driver) {
+        this.driver = driver;
     }
-
 }

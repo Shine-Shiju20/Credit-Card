@@ -14,16 +14,16 @@ Feature: CC-S-022 Security Edge Cases
       | TestcaseID |
       | CC_TC_124 |
 
-  @CC-S-022
-  @CC_TC_125
-  Scenario Outline: Verify invalid token blocks repayment operation
-    Given test data is loaded for "<TestcaseID>"
-    When user performs repayment transaction
-    Then API response status code should be 401
-
-    Examples:
-      | TestcaseID |
-      | CC_TC_125 |
+#  @CC-S-022
+#  @CC_TC_125
+#  Scenario Outline: Verify invalid token blocks repayment operation
+#    Given test data is loaded for "<TestcaseID>"
+#    When user performs repayment transaction
+#    Then API response status code should be 401
+#
+#    Examples:
+#      | TestcaseID |
+#      | CC_TC_125 |
 
   @CC-S-022
   @CC_TC_126

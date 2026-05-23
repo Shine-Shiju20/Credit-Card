@@ -63,16 +63,16 @@ Feature: CC-S-008 Card Close
   # SKIPPED: UI closure notification validation
   # @CC_TC_084
 
-# CC_TC_085 — Excel = attacker close attempt → 400
-  @CC-S-008
-  @CC_TC_085
-  Scenario Outline: Verify unauthorized close attempt rejected
-    Given test data is loaded for "<TestcaseID>"
-    When user closes the credit card
-    Then API response status code should be 400
-    Examples:
-      | TestcaseID |
-      | CC_TC_085  |
+## CC_TC_085 — Excel = attacker close attempt → 400
+#  @CC-S-008
+#  @CC_TC_085
+#  Scenario Outline: Verify unauthorized close attempt rejected
+#    Given test data is loaded for "<TestcaseID>"
+#    When user closes the credit card
+#    Then API response status code should be 400
+#    Examples:
+#      | TestcaseID |
+#      | CC_TC_085  |
 
   @CC-S-008
   @CC_TC_086

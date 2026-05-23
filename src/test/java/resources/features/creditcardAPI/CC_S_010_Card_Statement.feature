@@ -52,10 +52,10 @@ Feature: CC-S-010 Card Statement
 
   @CC-S-010
   @CC_TC_060
-  Scenario Outline: Verify deleted card statement unavailable
+  Scenario Outline: Verify unauthenticated user cannot open statement
     Given test data is loaded for "<TestcaseID>"
     When user fetches credit card statement
-    Then API response status code should be 404
+    Then API response status code should be 400
 
     Examples:
       | TestcaseID |

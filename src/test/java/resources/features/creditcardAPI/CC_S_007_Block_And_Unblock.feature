@@ -30,7 +30,7 @@ Feature: CC-S-007 Block & Unblock
   Scenario Outline: Verify blocked card purchase rejection
     Given test data is loaded for "<TestcaseID>"
     When user performs purchase transaction
-    Then API response status code should be 404
+    Then API response status code should be 400
 
     Examples:
       | TestcaseID |

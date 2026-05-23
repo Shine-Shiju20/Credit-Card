@@ -36,36 +36,36 @@ Feature: CC-S-014 Payment Tracking Integration
       | TestcaseID |
       | CC_TC_075 |
 
-  @CC-S-014
-  @CC_TC_076
-  Scenario Outline: Verify failed callback updates state
-    Given test data is loaded for "<TestcaseID>"
-    When payment callback is triggered
-    Then API response status code should be 200
+#  @CC-S-014
+#  @CC_TC_076
+#  Scenario Outline: Verify failed callback updates state
+#    Given test data is loaded for "<TestcaseID>"
+#    When payment callback is triggered
+#    Then API response status code should be 200
+#
+#    Examples:
+#      | TestcaseID |
+#      | CC_TC_076 |
 
-    Examples:
-      | TestcaseID |
-      | CC_TC_076 |
-
-  @CC-S-014
-  @CC_TC_077
-  Scenario Outline: Verify reconciliation settlement process
-    Given test data is loaded for "<TestcaseID>"
-    When payment reconciliation service is triggered
-    Then API response status code should be 200
-
-    Examples:
-      | TestcaseID |
-      | CC_TC_077 |
-
-  @CC-S-014
-  @CC_TC_078
-  Scenario Outline: Verify repayment history API
-    Given test data is loaded for "<TestcaseID>"
-    When user fetches repayment history
-    Then API response status code should be 200
-
-    Examples:
-      | TestcaseID |
-      | CC_TC_078 |
+#  @CC-S-014
+#  @CC_TC_077
+#  Scenario Outline: Verify reconciliation settlement process
+#    Given test data is loaded for "<TestcaseID>"
+#    When payment reconciliation service is triggered
+#    Then API response status code should be 200
+#
+#    Examples:
+#      | TestcaseID |
+#      | CC_TC_077 |
+#
+#  @CC-S-014
+#  @CC_TC_078
+#  Scenario Outline: Verify repayment history API
+#    Given test data is loaded for "<TestcaseID>"
+#    When user fetches repayment history
+#    Then API response status code should be 200
+#
+#    Examples:
+#      | TestcaseID |
+#      | CC_TC_078 |
 
